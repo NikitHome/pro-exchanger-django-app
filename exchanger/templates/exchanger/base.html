@@ -1,0 +1,182 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pro-exchanger</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"
+</head>
+<body id="bg" style="background-image: url('{% static "images/background_main_page.jpg"%}')">
+    <nav class="navbar">
+        <a class="logo" href="{% url 'exchanger:index' %}">
+            LOGO
+        </a>
+        <div class="navbarButtons">
+            <ul class="navbarItems">
+                <li class="navbarItem">
+                    <a class="navbarItemText" href="{% url 'exchanger:index' %}">
+                        Главная
+                    </a>
+                </li>
+                <li class="navbarItem">
+                    <div class="verticalLine"></div>
+                </li>
+                <li class="navbarItem">
+                    <a class="navbarItemText" href="{% url 'exchanger:cooperation' %}">
+                        Сотрудничество
+                    </a>
+                </li>
+                <li class="navbarItem">
+                    <div class="verticalLine"></div>
+                </li>
+                <li class="navbarItem">
+                    <a class="navbarItemText" href="{% url 'exchanger:exchange_rules' %}">
+                        Правила обмена
+                    </a>
+                </li>
+                <li class="navbarItem">
+                    <div class="verticalLine"></div>
+                </li>
+                <li class="navbarItem">
+                    <a class="navbarItemText" href="{% url 'exchanger:partners' %}">
+                        Партнёры
+                    </a>
+                </li>
+                <li class="navbarItem" >
+                    <div class="verticalLine"></div>
+                </li>
+                <li class="navbarItem">
+                    <a class="navbarItemText" href="{% url 'exchanger:contacts' %}">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="languageDropdawn">
+                        <select id="stateSelect" class="stateSelect" name="stateSelect">
+                            <option value="RU">RU</option>
+                            <option value="EN">EN</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbarAuthItems">
+                {% if user.is_authenticated %}
+                    <ul class="isAuthTrue">    
+                        <li>
+                            <span>
+                                Hi, {{ user.username }}.
+                            </span>
+                        </li>
+                        <li>
+                            <a class="logoutText" href="{% url 'users:logout' %}">
+                                Выйти
+                            </a>
+                        </il>
+                    </ul>
+                {% else %}
+                    <ul class="isAuthFalse">
+                        <li>
+                            <button type="button" class="registerText">
+                                <a href="{% url 'users:register' %}">
+                                    Регистрация
+                                </a>
+                            </button>
+                        </li>
+                        <li>
+                            <p class="loginText">
+                                Есть аккаунт?
+                                <a href="{% url 'users:login' %}">
+                                    Войти
+                                </a>
+                            <p>
+                        </li>
+                    </ul>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+    <main class="content">
+        <div>
+            {% block content %}{% endblock content %}
+        </div> 
+    </main>
+    <footer>
+        <div class="footerTop">
+            <div class="footerNavbarButtons">
+                <a class="footerLogo" href="{% url 'exchanger:index' %}">
+                    LOGO
+                </a>
+                <ul class="footerNavbarItems">
+                    <li class="footerNavbarItem">
+                        <a class="footerNavbarItemText" href="{% url 'exchanger:index' %}">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <div class="footerVerticalLine"></div>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <a class="footerNavbarItemText" href="{% url 'exchanger:about_us' %}">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <div class="footerVerticalLine"></div>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <a class="footerNavbarItemText" href="{% url 'exchanger:rules' %}">
+                            Правила
+                        </a>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <div class="footerVerticalLine"></div>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <a class="footerNavbarItemText" href="{% url 'exchanger:partners' %}">
+                            Партнёры
+                        </a>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <div class="footerVerticalLine"></div>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <a class="footerNavbarItemText" href="{% url 'exchanger:FAQ' %}"> 
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="footerNavbarItem" >
+                        <div class="footerVerticalLine"></div>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <a class="footerNavbarItemText" href="{% url 'exchanger:contacts' %}">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="telegram">
+                <div class="telegramImage">
+                    <img src="{% static 'images/telegramImage.png' %}">
+                </div>
+                <div>
+                    <p class="telegramText">
+                        Наш Telegram
+                    </p>
+                    <p class="telegramLink">
+                        @Telegram
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p class="rightsText">
+                © 2022 Все права защищены
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
