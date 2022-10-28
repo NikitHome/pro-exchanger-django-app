@@ -11,6 +11,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'users',
     'exchanger',
+    'localization',
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -74,24 +75,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru'
 
-LANGUAGES = (
-    ('ru', 'Russian'),
-    ('en', 'English')
-)
-
-USE_I18N = True
-
-LOCALE_PATHS = (
-    'locale'
-)
-
 TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
 
 STATIC_URL = '/static/'
 
