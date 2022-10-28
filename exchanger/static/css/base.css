@@ -6,6 +6,14 @@ body {
     height: 100vh;
 }
 
+#bg {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 /* header styles */ 
 
 .navbar {
@@ -158,7 +166,11 @@ footer {
 }
 
 .footerVerticalLine {
-    border: thick solid black;
+    margin-top: -3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 2px solid rgba(0, 255, 240, 1);
+    height: 26px;
 }
 
 .telegram {

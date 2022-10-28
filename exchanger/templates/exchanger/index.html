@@ -1,5 +1,19 @@
 {% extends 'exchanger/base.html' %}
+
 {% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"
+{% endblock %}
+
+{% block additional_styles %}
+    <style>
+        body {
+            background-image: url('{% static "images/"%}');
+        }
+    </style>
+{% endblock %}
 
 {% block content %}
     
