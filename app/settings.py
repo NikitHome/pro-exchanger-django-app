@@ -72,7 +72,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
+
+LANGUAGES = (
+    ('ru', 'Russian'),
+    ('en', 'English')
+)
+
+USE_I18N = True
+
+LOCALE_PATHS = (
+    'locale'
+)
 
 TIME_ZONE = 'UTC'
 
