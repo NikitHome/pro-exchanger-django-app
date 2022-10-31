@@ -1,0 +1,142 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* about service block */
+
+.aboutService {
+    display: inline-flex;
+}
+
+.aboutService .leftText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #fff;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+.aboutService .rightText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 33px;
+    color: #fff;
+    margin-top: 165px;
+    margin-left: 80px;
+}
+
+/* exchanger block */
+
+.exchanger {
+    display: inline-flex;
+}
+
+.exchanger .leftBlock p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 33px;
+    color: #fff;
+}
+
+.exchanger .rightBlock p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 33px;
+    color: #fff;
+}
+
+/* intermediate block */
+
+.intermediateBlock1 .text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.intermediateBlock1 .imagesGroup {
+    text-align: center;
+}
+
+.intermediateBlock1 #words360 {
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(720deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.intermediateBlock1 .textRadiusVectorImg {
+    position: absolute;
+    margin-left: -41.5px;
+    margin-top: 22px;
+}

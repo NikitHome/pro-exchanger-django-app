@@ -78,17 +78,10 @@ body {
     font-weight: normal;
     margin-left:   0px;
     margin-right: 0px;
+    color: #fff;
 }
 
 .stateSelect {
-    margin-top: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    background: none;
-    border: none;
-    color: #000;
-}
-.stateSelect:active {
     margin-top: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
@@ -135,7 +128,6 @@ body {
 /* footer styles */
 
 footer {
-    position: absolute;
     margin: 0 10% 0 10%;
     bottom: 0;
     width: 80%;
