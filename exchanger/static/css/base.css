@@ -73,18 +73,7 @@ body {
     padding-bottom: 0;
 }
 
-.languageDropdawn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    margin-left:   0px;
-    margin-right: 0px;
-    color: #fff;
-}
-
-.stateSelect {
-    margin-top: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
+#languageSelect {
     background: none;
     border: none;
     color: #fff;

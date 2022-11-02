@@ -7,13 +7,17 @@
     <title>
         {% block title %}
             Pro-exchanger
-        {% endblock title %}    
+        {% endblock title %}   
     </title>
     {% block styles %}
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 </head>
 <body id="bg">
+{% block scripts %}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+{% endblock %}
 {% block additional_styles %}
     <style>
         body {
@@ -67,12 +71,10 @@
             </ul>
             <ul>
                 <li>
-                    <div class="languageDropdawn">
-                        <select id="stateSelect" class="stateSelect" name="stateSelect">
-                            <option value="RU">RU</option>
-                            <option value="EN">EN</option>
-                        </select>
-                    </div>
+                    <select id="languageSelect">
+                        <option value="0">RU</option>
+                        <option value="1">EN</option>
+                    </select>
                 </li>
             </ul>
             <ul class="navbarAuthItems">

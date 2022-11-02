@@ -1,12 +1,15 @@
 {% extends 'exchanger/base.html' %}
-
 {% load static %}
-
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index.css' %}"
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
-
+{% block scripts %}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+    <script type="text/javascript" src="{% static 'js/dd.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/coinDropdown.js' %}"></script>
+{% endblock %}
 {% block additional_styles %}
     <style>
         body {
@@ -14,7 +17,6 @@
         }
     </style>
 {% endblock %}
-
 {% block content %}
     <div class="aboutService">
         <p class="leftText">
@@ -32,6 +34,79 @@
             <p>
                 Отдаете коины  
             </p>
+            <div class="select-menu" id="select-menu">
+                <div class="select-btn">
+                    <span id="selectCoin1" class="sBtn-text selected">Выбрать</span>
+                </div>
+                <ul class="options" id="coinsOptions">
+                    <li class="option" data-coin="bitcoin" id="bitcoin">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
+                            alt="BitcoinImage">
+                        <span id="bitcoin" class="option-text selected">Bitcoin BTC</span>
+                    </li>
+                    <li class="option" data-coin="ethereum" id="ethereum">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+                            alt="EthereumImage">
+                        <span id="ethereum" class="option-text selected">Ethereum ETH</span>
+                    </li>
+                    <li class="option" data-coin="tether" id="tether">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                            alt="TetherImage">
+                        <span id="tether" class="option-text selected">Tether USDT</span>
+                    </li>
+                    <li class="option" data-coin="cardano" id="cardano">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png"
+                            alt="CardanoImage">
+                        <span id="cardano" class="option-text selected">Cardano ADA</span>
+                    </li>
+                    <li class="option" data-coin="dogecoin" id="dogecoin">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
+                            alt="DogecoinImage">
+                        <span id="dogecoin" class="option-text selected">Dogecoin DOGE</span>
+                    </li>
+                    <li class="option" data-coin="tron" id="tron">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png"
+                            alt="TRONImage">
+                        <span id="tron" class="option-text selected">TRON TRX</span>
+                    </li>
+                    <li class="option" data-coin="shibainu" id="shibainu">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png"
+                            alt="ShibaInuImage">
+                        <span id="shibainu" class="option-text selected">Shiba Inu SHIB</span>
+                    </li>
+                    <li class="option" data-coin="litecoin" id="litecoin">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png"
+                            alt="LitecoinImage">
+                        <span id="litecoin" class="option-text selected">Litecoin LTC</span>
+                    </li>
+                    <li class="option" data-coin="terraclassic" id="terraclassic">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png"
+                            alt="TerraClassicImage">
+                        <span id="terraclassic" class="option-text selected">Terra Classic LUNC</span>
+                    </li>
+                    <li class="option" data-coin="chiliz" id="chiliz">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png"
+                            alt="ChilizImage">
+                        <span id="chiliz" class="option-text selected">Chiliz CHZ</span>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                const optionMenu = document.querySelector('.select-menu');
+                const selectBtn = optionMenu.querySelector('.select-btn');
+                const options = optionMenu.querySelectorAll('.option');
+                const sBtn_text = optionMenu.querySelector('.sBtn-text');
+
+                selectBtn.addEventListener('click', () => optionMenu.classList.toggle('active'));
+
+                options.forEach(option => {
+                    option.addEventListener('click', () => {
+                        let selectedOption = option.querySelector('.option-text').innerText;
+                        sBtn_text.innerText = selectedOption;
+                        optionMenu.classList.remove('active')
+                    })
+                })
+            </script>
         </div>
         <div class="centerBlock">
             <img src="{% static "images/vector.png" %}">
@@ -40,6 +115,91 @@
             <p>
                 Получаете коины
             </p>
+            <div class="select-menu select-menu1" id="select-menu1">
+                <div class="select-btn select-btn1">
+                    <span id="selectCoin2" class="sBtn-text sBtn-text1 selected">Выбрать</span>
+                </div>
+                <ul class="options options1" id="coinsOptions1">
+
+                    <li class="option option1" data-coin="bitcoin2" id="bitcoin2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
+                            alt="BitcoinImage">
+                        <span id="bitcoin2" class="option-text option-text1 selected1">Bitcoin BTC</span>
+                    </li>
+
+                    <li class="option option1" data-coin="ethereum2" id="ethereum2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+                            alt="EthereumImage">
+                        <span id="ethereum2" class="option-text option-text1 selected1">Ethereum ETH</span>
+                    </li>
+
+                    <li class="option option1" data-coin="tether2" id="tether2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                            alt="TetherImage">
+                        <span id="tether2" class="option-text option-text1 selected1">Tether USDT</span>
+                    </li>
+
+                    <li class="option option1" data-coin="cardano2" id="cardano2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png"
+                            alt="CardanoImage">
+                        <span id="cardano2" class="option-text option-text1 selected1">Cardano ADA</span>
+                    </li>
+
+                    <li class="option option1" data-coin="dogecoin2" id="dogecoin2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
+                            alt="DogecoinImage">
+                        <span id="dogecoin2" class="option-text option-text1 selected1">Dogecoin DOGE</span>
+                    </li>
+
+                    <li class="option option1" data-coin="tron2" id="tron2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png"
+                            alt="TRONImage">
+                        <span id="tron2" class="option-text option-text1 selected1">TRON TRX</span>
+                    </li>
+
+                    <li class="option option1" data-coin="shibainu2" id="shibainu2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png"
+                            alt="ShibaInuImage">
+                        <span id="shibainu2" class="option-text option-text1 selected1">Shiba Inu SHIB</span>
+                    </li>
+
+                    <li class="option option1" data-coin="litecoin2" id="litecoin2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png"
+                            alt="LitecoinImage">
+                        <span id="litecoin2" class="option-text option-text1 selected1">Litecoin LTC</span>
+                    </li>
+
+                    <li class="option option1" data-coin="terraclassic2" id="terraclassic2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png"
+                            alt="TerraClassicImage">
+                        <span id="terraclassic2" class="option-text option-text1 selected1">Terra Classic
+                            LUNC</span>
+                    </li>
+
+                    <li class="option option1" data-coin="chiliz2" id="chiliz2">
+                        <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png"
+                            alt="ChilizImage">
+                        <span id="chiliz2" class="option-text option-text1 selected1">Chiliz CHZ</span>
+                    </li>
+
+                </ul>
+            </div>
+            <script>
+                const optionMenu1 = document.querySelector('.select-menu1');
+                const selectBtn1 = optionMenu1.querySelector('.select-btn1');
+                const options1 = optionMenu1.querySelectorAll('.option1');
+                const sBtn_text1 = optionMenu1.querySelector('.sBtn-text1');
+
+                selectBtn1.addEventListener('click', () => optionMenu1.classList.toggle('active'));
+
+                options1.forEach(option1 => {
+                    option1.addEventListener('click', () => {
+                        let selectedOption = option1.querySelector('.option-text1').innerText;
+                        sBtn_text1.innerText = selectedOption;
+                        optionMenu1.classList.remove('active')
+                    })
+                })
+            </script>
         </div>
     </div>
     <div class="intermediateBlock1">
