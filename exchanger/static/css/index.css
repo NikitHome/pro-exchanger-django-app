@@ -6,6 +6,9 @@
     src: url('../fonts/Mont-Regular.ttf') format('truetype');
 }
 
+
+
+
 /* about service block */
 
 .aboutOurService {
@@ -29,6 +32,8 @@
     margin-top: 165px;
     margin-left: 70px;
 }
+
+
 
 /* exchanger block */
 
@@ -66,6 +71,8 @@
     margin-top: 0px;
 }
 
+
+
 /* dropdown */
 
 .select-menu {
@@ -86,9 +93,10 @@
     border-radius: 8px;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-top: -18;
 }
+
 .select-menu.active .select-btn i {
     transform: rotate(-180deg);
 }
@@ -99,9 +107,10 @@
     border-radius: 8px;
     margin-top: 10px;
     background: #fff;
-    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     display: none;
 }
+
 .select-menu.active .options {
     display: block;
 }
@@ -116,11 +125,13 @@
     background: #fff;
     margin-left: -2px;
 }
+
 .options .option img {
     height: 24px;
     width: 24px;
     margin-left: -11px;
 }
+
 .options .option:hover {
     background: #f2f2f2;
 }
@@ -129,6 +140,7 @@
     font-size: 25px;
     margin-right: 12px;
 }
+
 .option .option-text {
     font-size: 18px;
     color: #333;
@@ -144,6 +156,7 @@ span.selected.sBtn-text {
     font-size: 25px;
     display: inline-flex;
 }
+
 span.selected.option-text {
     animation: none;
     background-color: transparent;
@@ -153,10 +166,13 @@ span.selected1.sBtn-text {
     animation: none;
     background-color: transparent;
 }
+
 span.selected1.option-text {
     animation: none;
     background-color: transparent;
 }
+
+
 
 /* dropdown vector */
 
@@ -170,8 +186,10 @@ span.selected1.option-text {
 }
 
 .arrow-bottom {
-    transform: rotate(135deg); 
+    transform: rotate(135deg);
 }
+
+
 
 /* intermediate block */
 
@@ -211,6 +229,7 @@ span.selected1.option-text {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 @-webkit-keyframes rotation {
     0% {
         -webkit-transform: rotate(0deg);
@@ -218,6 +237,7 @@ span.selected1.option-text {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
@@ -225,6 +245,7 @@ span.selected1.option-text {
         transform: rotate(360deg);
     }
 }
+
 @-moz-keyframes rotation {
     0% {
         -webkit-transform: rotate(0deg);
@@ -232,6 +253,7 @@ span.selected1.option-text {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
@@ -239,6 +261,7 @@ span.selected1.option-text {
         transform: rotate(360deg);
     }
 }
+
 @-o-keyframes rotation {
     0% {
         -webkit-transform: rotate(0deg);
@@ -246,6 +269,7 @@ span.selected1.option-text {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
@@ -253,6 +277,7 @@ span.selected1.option-text {
         transform: rotate(360deg);
     }
 }
+
 @keyframes rotation {
     0% {
         -webkit-transform: rotate(0deg);
@@ -260,6 +285,7 @@ span.selected1.option-text {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(720deg);
@@ -273,6 +299,8 @@ span.selected1.option-text {
     margin-left: -41.5px;
     margin-top: 22px;
 }
+
+
 
 /* why select our block */
 
@@ -315,10 +343,12 @@ span.selected1.option-text {
 .whyOurBlock .list ul li .colorText1 {
     margin-top: 38px;
 }
+
 .whyOurBlock .list ul li .colorText2 {
     margin-top: 38px;
 }
-.whyOurBlock .list ul li .colorText4     {
+
+.whyOurBlock .list ul li .colorText4 {
     margin-top: 32px;
 }
 
@@ -337,15 +367,20 @@ span.selected1.option-text {
 .whyOurBlock .list ul li .text1 {
     margin-left: 30px;
 }
+
 .whyOurBlock .list ul li .text2 {
     margin-left: 30px;
 }
+
 .whyOurBlock .list ul li .text3 {
     margin-left: 32px;
 }
+
 .whyOurBlock .list ul li .text4 {
     margin-left: 34px;
 }
+
+
 
 /* reviews block */
 
@@ -394,6 +429,7 @@ span.selected1.option-text {
     color: #fff;
     margin-left: 20px;
 }
+
 .reviewsBlock .reviews .reviewContent .date {
     font-family: 'Mont-Regular';
     font-style: normal;
@@ -404,6 +440,7 @@ span.selected1.option-text {
     margin-left: 20px;
     margin-top: -18;
 }
+
 .reviewsBlock .reviews .reviewContent .text {
     font-family: 'Mont-Regular';
     font-style: normal;
@@ -419,6 +456,7 @@ span.selected1.option-text {
     margin-left: 30px;
     margin-bottom: 8px;
 }
+
 .reviewsBlock .reviews .ellipses img {
     margin-left: 7px;
 }
@@ -444,6 +482,112 @@ span.selected1.option-text {
     color: #fff;
     margin-top: 14px;
 }
+
+
+
+/* send review */
+
+.sendReview {
+    width: 925px;
+    height: 604px;
+    position: fixed;
+    top: 10%;
+    left: 18%;
+    border-radius: 10px;
+}
+
+.sendReview .sendReviewExitImgs {
+    position: absolute;
+    right: 15;
+    top: 15;
+    cursor: pointer;
+}
+
+.sendReview .sendReviewExitImgs .exitReviewImg {
+    position: absolute;
+    top: 6;
+    right: 5;
+}
+
+.sendReview .titleText p {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 70px;
+    color: #fff;
+}
+
+.sendReview .email {
+    margin-top: -30px;
+    text-align: center;
+}
+.sendReview .email input {
+    width: 835px;
+    height: 67px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 10px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+}
+.sendReview .email input::placeholder {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 38px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sendReview .reviewText {
+    text-align: center;
+    margin-left: 0;
+}
+.sendReview .reviewText input {
+    width: 835px;
+    height: 131px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 10px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top: 35px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+}
+.sendReview .reviewText input::placeholder {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 38px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sendReview .reviewButton {
+    margin-top: 75px;
+    text-align: center;
+    cursor: pointer;
+}
+.sendReview .reviewButton button {
+    width: 345px;
+    height: 80px;
+    background: linear-gradient(180deg, #00FFF0 -46.15%, #469EC4 65.15%, #0082BA 169.71%, #263A43 169.71%);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.sendReview .reviewButton button p {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: #FFFFFF;
+    margin-top: 8;
+}
+
+
 
 /* about service block */
 
@@ -503,6 +647,7 @@ span.selected1.option-text {
 .aboutService .aboutList .aboutListTop .listText2 {
     margin-left: 60px;
 }
+
 .aboutService .aboutList .aboutListTop .listText3 {
     margin-left: 60px;
 }
@@ -510,6 +655,7 @@ span.selected1.option-text {
 .aboutService .aboutList .aboutListBottom .listText2 {
     margin-left: 52px;
 }
+
 .aboutService .aboutList .aboutListBottom .listText3 {
     margin-left: 82px;
 }

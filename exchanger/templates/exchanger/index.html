@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block scripts %}
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {% comment %} <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script> {% endcomment %}
     {% comment %} <script type="text/javascript" src="{% static 'js/dd.min.js' %}"></script> {% endcomment %}
     {% comment %} <script type="text/javascript" src="{% static 'js/coinDropdown.js' %}"></script> {% endcomment %}
@@ -458,6 +458,66 @@
                 </p>
             </button>
         </div>
+        <div id="sendReview" class="sendReview">
+            <div type="button" class="sendReviewExitImgs">
+                <img class="exitReviewImg" src="{% static 'images/exitReviewWindow.png' %}">
+                <img src="{% static 'images/ellipsExitPreviewWindow.png' %}">
+            </div>
+            <div class="title">
+                <p>
+                    Оставить отзыв
+                </p>
+            </div>
+            <div class="email">
+                <input placeholder="Ваш e-mail" />
+            </div>
+            <div class="reviewText">
+                <input placeholder="Отзыв" />
+            </div>
+            <div class="reviewButton">
+                <button type="button" id="send">
+                    <p>
+                        Отправить
+                    </p>
+                </button>
+            </div>
+        </div>
+        <style>
+            #sendReview {
+                background-image: url('{% static "images/blockReviewSend.png"%}');
+            }
+        </style>
+        <script>
+            function deleteElement() {
+                document.getElementById('sendReview').style.display = 'none';
+            }
+            deleteElement();
+
+            function addElement() {
+                document.getElementById('sendReview').style.display = 'block';
+            }
+
+            function buttonAddReview() {
+                $('.addReview').on('click', () => {
+                    addElement();
+                })
+            }
+            buttonAddReview();
+
+            function sendReview() {
+                $('#send').on('click', () => {
+                    window.location.reload();
+                })
+            }
+            sendReview();
+
+            function exitReviewWindow() {
+                $('.sendReviewExitImgs').on('click', () => {
+                    deleteElement();
+                })
+            }
+            exitReviewWindow();
+        </script>
     </div>
 
     <div class="aboutService">
