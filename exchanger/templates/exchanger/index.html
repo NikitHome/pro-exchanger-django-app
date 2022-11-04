@@ -1,24 +1,29 @@
 {% extends 'exchanger/base.html' %}
+
 {% load static %}
+
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
+
 {% block scripts %}
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
-    <script type="text/javascript" src="{% static 'js/dd.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/coinDropdown.js' %}"></script>
+    {% comment %} <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script> {% endcomment %}
+    {% comment %} <script type="text/javascript" src="{% static 'js/dd.min.js' %}"></script> {% endcomment %}
+    {% comment %} <script type="text/javascript" src="{% static 'js/coinDropdown.js' %}"></script> {% endcomment %}
 {% endblock %}
+
 {% block additional_styles %}
     <style>
         body {
-            background-image: url('{% static "images/background_main_page.jpg"%}');
+            background-image: url('{% static "images/background_main.jpg"%}');
         }
     </style>
 {% endblock %}
+
 {% block content %}
-    <div class="aboutService">
+    <div class="aboutOurService">
         <p class="leftText">
             Регистрация<br>
             не требуется
@@ -29,14 +34,18 @@
             электронных денег.
         </p>
     </div>
+
     <div class="exchanger">
         <div class="leftBlock">
-            <p>
+            <p class="leftBlockText">
                 Отдаете коины  
             </p>
             <div class="select-menu" id="select-menu">
                 <div class="select-btn">
-                    <span id="selectCoin1" class="sBtn-text selected">Выбрать</span>
+                    <span id="selectCoin1" class="sBtn-text selected">
+                        Выбрать
+                        <div class="arrow arrow-bottom"></div>
+                    </span>
                 </div>
                 <ul class="options" id="coinsOptions">
                     <li class="option" data-coin="bitcoin" id="bitcoin">
@@ -112,12 +121,15 @@
             <img src="{% static "images/vector.png" %}">
         </div>
         <div class="rightBlock">
-            <p>
-                Получаете коины
+            <p class="rightBlockText">
+                Получите коины
             </p>
             <div class="select-menu select-menu1" id="select-menu1">
                 <div class="select-btn select-btn1">
-                    <span id="selectCoin2" class="sBtn-text sBtn-text1 selected">Выбрать</span>
+                    <span id="selectCoin2" class="sBtn-text sBtn-text1 selected">
+                        Выбрать
+                        <div class="arrow arrow-bottom"></div>
+                    </span>
                 </div>
                 <ul class="options options1" id="coinsOptions1">
 
@@ -202,6 +214,7 @@
             </script>
         </div>
     </div>
+
     <div class="intermediateBlock1">
         <div class="text">
             <p>
@@ -214,4 +227,323 @@
             <img class="textRadiusVectorImg" src="{% static 'images/textRadiusVector.png' %}">
         </div>
     </div>
+
+    <div class="whyOurBlock">
+        <div class="title">
+            <p>
+                Почему выбирают нас
+            </p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <img src="{% static 'images/круглосуточно.png' %}">
+                    <p class="colorText colorText1">
+                        Круглосуточно
+                    </p>
+                    <p class="text text1">
+                        Работаем без<br>
+                        перерывов и выходных
+                    </p>
+                </li>
+                <li>
+                    <img src="{% static 'images/конфиденциальность.png' %}">
+                    <p class="colorText colorText2">
+                        Конфиденциальность
+                    </p>
+                    <p class="text text2">
+                        Мы не передаем Вашу<br>
+                        персональную информацию<br>
+                        3-им лицам
+                    </p>
+                </li>
+                <li>
+                    <img src="{% static 'images/поддержка.png' %}">
+                    <p class="colorText colorText3">
+                        Поддержка
+                    </p>
+                    <p class="text text3"> 
+                        Квалифицированная и<br>
+                        быстрая помощь службы<br>
+                        поддержки
+                    </p>
+                </li>
+                <li>
+                    <img src="{% static 'images/скорость.png' %}">
+                    <p class="colorText colorText4">
+                        Скорость
+                    </p>
+                    <p class="text text4">
+                        Среднее время обмена<br>
+                        валюты - 3 минут
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="reviewsBlock">
+        <div class="title">
+            Отзывы Pro-Exchanger
+        </div>
+        <div class="reviews">
+            <ul>
+                <li class="review">
+                    <div class="ellipses">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                    </div>
+                    <div class="reviewContent">
+                        <div class="name">
+                            <p>
+                                Alex
+                            </p>
+                        </div>
+                        <div class="date">
+                            <p>
+                                23.10.2022
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Всё чётко ждал ровно 5<br>
+                                минут классный обменник<br>
+                                всем советую !
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="review">
+                    <div class="ellipses">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                    </div>
+                    <div class="reviewContent">
+                        <div class="name">
+                            <p>
+                                Staxse
+                            </p>
+                        </div>
+                        <div class="date">
+                            <p>
+                                20.10.2022
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Лучший обменник, самая<br>
+                                приемлемая комиссия, и<br>
+                                лучшая скорость обменна
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="review">
+                    <div class="ellipses">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                    </div>
+                    <div class="reviewContent">
+                        <div class="name">
+                            <p>
+                                Денис
+                            </p>
+                        </div>
+                        <div class="date">
+                            <p>
+                                16.10.2022
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Спасибо за ваш работу<br>
+                                быстро,четко рекомендую<br>
+                                сервис процветания вам!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li class="review">
+                    <div class="ellipses">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                    </div>
+                    <div class="reviewContent">
+                        <div class="name">
+                            <p>
+                                Александр Морозов
+                            </p>
+                        </div>
+                        <div class="date">
+                            <p>
+                                16.10.2022
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                В первый раз пользовался<br>
+                                обменником. Жутко<br>
+                                нервничал )) Быстро пришло<br>
+                                - отличный сервис!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="review">
+                    <div class="ellipses">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                    </div>
+                    <div class="reviewContent">
+                        <div class="name">
+                            <p>
+                                Леонид
+                            </p>
+                        </div>
+                        <div class="date">
+                            <p>
+                                13.10.2022
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Я в шоке!!! Перевод на<br>
+                                сберкарту прошёл<br>
+                                молниеносно. Молодцы<br>
+                                ребята так держать!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="review">
+                    <div class="ellipses">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/ellipse.png' %}">
+                    </div>
+                    <div class="reviewContent">
+                        <div class="name">
+                            <p>
+                                Борис
+                            </p>
+                        </div>
+                        <div class="date">
+                            <p>
+                                10.10.2022
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Довольно прост в<br>
+                                использовании. деньги<br>
+                                выводятся разработчикам<br>
+                                респект
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="reviewsButton">
+            <button type="button" class="addReview">
+                <p>  
+                    Оставить отзыв
+                </p>
+            </button>
+        </div>
+    </div>
+
+    <div class="aboutService">
+        <div class="title">
+            О сервисе Pro-Exchanger
+        </div>
+        <div class="aboutText">
+            <p class="slimText">
+                Pro-Exchanger - это выгодный сервис по обмену большинства<br>
+                видов валют. Вам необходимо только выбрать направления для<br>
+                обмена и заполнить реквизиты, дальнейшие действия происходят<br>
+                в автоматическом режиме, практически мгновенно. Полная<br>
+                операция по обмену в среднем выполняется от 5 до 15 минут, не<br>
+                зависимо от времени суток.
+            </p>
+            <p class="slimText">
+                Что именно выделяет нас на фоне других сервисов по обмену? В<br>
+                первую очередь это надежность предоставляемых услуг, нам<br>
+                важно, чтобы у Вас не возникло никаких трудностей при<br>
+                совершении операции.
+            </p>
+            <p class="slimText">
+                Если Вам необходим быстрый обмен, без каких-либо трудностей,<br>
+                то Pro-Exchanger это ваш выбор.
+            </p>
+            <p class="slimText">
+                Мы всегда вам рады и готовы помочь!
+            </p>
+            <p class="boldText">
+                Помимо абсолютной надежности,<br>
+                Pro-Exchanger имеет и ряд других<br>
+                достоинств:<br>
+            </p>
+        </div>
+        <div class="aboutList">
+            <ul class="aboutListTop">
+                <li class="listText1">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Выгодные курсы, которые<br>
+                        являются наилучшим<br>
+                        предложением на рынке
+                    </p>
+                </li>
+                <li class="listText2">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Квалифицированная и<br>
+                        быстрая помощь службы<br>
+                        поддержки
+                    </p>
+                </li>
+                <li class="listText3">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Резерв валют, позволяющий<br>
+                        совершать крупные<br>
+                        сделки(операции)
+                    </p>
+                </li>
+            </ul>
+            <ul class="aboutListBottom">
+                <li class="listText1">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Гарантия проведения всех<br>
+                        операций в короткий срок
+                    </p>
+                </li>
+                <li class="listText2">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Постоянное развитие и<br>
+                        улучшение сервиса
+                    </p>
+                </li>
+                <li class="listText3">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Широкий выбор<br>
+                        направлений для обмена
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bottomHorizontalLine"><div>
 {% endblock content %}
