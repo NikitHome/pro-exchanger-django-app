@@ -82,11 +82,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
    '/exchanger/static/css/',
    '/exchanger/static/images/',
-   '/exchanger/static/js/',
    
    '/users/static/css/',
    '/users/static/images/',
-   '/users/static/js/'
 ]
 
 LOGIN_URL = 'users:login'
