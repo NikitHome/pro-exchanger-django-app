@@ -1,0 +1,60 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+
+
+/* our partners block */
+
+.partnersContent .titleText {
+    color: #fff;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+.partnersContent .titleText p {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 83px;
+}
+
+.partnersContent .gifs {
+    margin-left: 125px;
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+.partnersContent .gifs ul {
+    display: inline-flex;
+}
+.partnersContent .gifs ul li {
+    list-style: none;
+    margin-right: 28px;
+}
+
+.partnersContent .gifs ul li .bigPidor {
+    height: 31;
+    width: 86;
+}
+
+.partnersContent .gifs ul li img {
+    list-style: none;
+    color: #fff;
+}
+
+
+
+/* horizontal line */
+
+.partnersContent .hLine {
+    margin-top: 0px;
+    width: 100%;
+    height: 6px;
+    background-color: rgba(0, 178, 255, 0.51);
+}

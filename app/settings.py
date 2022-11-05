@@ -79,12 +79,12 @@ TIME_ZONE = 'UTC'
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
+STATICFILES_DIRS = (
    '/exchanger/static/css/',
    '/exchanger/static/images/',
    
    '/users/static/css/',
    '/users/static/images/',
-]
+)
 
 LOGIN_URL = 'users:login'

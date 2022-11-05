@@ -1,4 +1,5 @@
 {% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,17 +16,15 @@
     {% endblock %}
 </head>
 <body id="bg">
-{% block scripts %}
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    {% comment %} <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script> {% endcomment %}
-{% endblock %}
+
 {% block additional_styles %}
     <style>
         body {
-            background-image: url('{% static "images/background_main.png"%}');
+            background-image: url('{% static "#"%}');
         }
     </style>
 {% endblock %}
+
     <nav class="navbar">
         <a class="logo" href="{% url 'exchanger:index' %}">
             LOGO
@@ -116,7 +115,11 @@
     </nav>
     <main class="content">
         <div>
-            {% block content %}{% endblock content %}
+            {% block content %}
+                {% block scripts %}
+                    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+                {% endblock %}
+            {% endblock content %}
         </div> 
     </main>
     <footer>
@@ -175,7 +178,7 @@
             </div>
             <div class="telegram">
                 <div class="telegramImage">
-                    <img src="{% static 'images/telegramImage.png' %}">
+                    <img src="{% static 'images/footer/telegramImage.png' %}">
                 </div>
                 <div>
                     <p class="telegramText">

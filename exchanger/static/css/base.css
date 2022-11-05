@@ -1,4 +1,5 @@
 /* imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
 
 @font-face {
@@ -8,7 +9,6 @@
 
 body {
     min-width: 1000px;
-    z-index: 1;
 }
 
 #bg {
@@ -145,14 +145,15 @@ footer {
 
 .footerTop {
     display: inline-flex;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-left: -20px;
 }
 
 .footerBottom .rightsText {
     color: #fff;
     margin-top: -20px;
     padding-bottom: 16px;
-    margin-left: 45px;
+    margin-left: 25px;
 }
 
 .footerNavbarButtons {
@@ -186,7 +187,7 @@ footer {
 
 .telegram {
     display: inline-flex;
-    margin-left: 300px;
+    margin-left: 280px;
     margin-top: 10px;
 }
 

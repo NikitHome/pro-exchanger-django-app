@@ -7,22 +7,18 @@
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
 
-{% block scripts %}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    {% comment %} <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script> {% endcomment %}
-    {% comment %} <script type="text/javascript" src="{% static 'js/dd.min.js' %}"></script> {% endcomment %}
-    {% comment %} <script type="text/javascript" src="{% static 'js/coinDropdown.js' %}"></script> {% endcomment %}
-{% endblock %}
-
 {% block additional_styles %}
     <style>
         body {
-            background-image: url('{% static "images/background_main.png"%}');
+            background-image: url('{% static "images/index/background_main.png"%}');
         }
     </style>
 {% endblock %}
 
 {% block content %}
+{% block scripts %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}
     <div class="aboutOurService">
         <p class="leftText">
             Регистрация<br>
@@ -118,7 +114,7 @@
             </script>
         </div>
         <div class="centerBlock">
-            <img src="{% static "images/vector.png" %}">
+            <img src="{% static "images/index/vector.png" %}">
         </div>
         <div class="rightBlock">
             <p class="rightBlockText">
@@ -223,8 +219,8 @@
             </p>
         </div>
         <div class="imagesGroup">
-            <img class="textRadiusImg" id="words360" src="{% static 'images/textRadius.png' %}">
-            <img class="textRadiusVectorImg" src="{% static 'images/textRadiusVector.png' %}">
+            <img class="textRadiusImg" id="words360" src="{% static 'images/index/textRadius.png' %}">
+            <img class="textRadiusVectorImg" src="{% static 'images/index/textRadiusVector.png' %}">
         </div>
     </div>
 
@@ -237,7 +233,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <img src="{% static 'images/круглосуточно.png' %}">
+                    <img src="{% static 'images/index/круглосуточно.png' %}">
                     <p class="colorText colorText1">
                         Круглосуточно
                     </p>
@@ -247,7 +243,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="{% static 'images/конфиденциальность.png' %}">
+                    <img src="{% static 'images/index/конфиденциальность.png' %}">
                     <p class="colorText colorText2">
                         Конфиденциальность
                     </p>
@@ -258,7 +254,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="{% static 'images/поддержка.png' %}">
+                    <img src="{% static 'images/index/поддержка.png' %}">
                     <p class="colorText colorText3">
                         Поддержка
                     </p>
@@ -269,7 +265,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="{% static 'images/скорость.png' %}">
+                    <img src="{% static 'images/index/скорость.png' %}">
                     <p class="colorText colorText4">
                         Скорость
                     </p>
@@ -290,9 +286,9 @@
             <ul>
                 <li class="review">
                     <div class="ellipses">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
                     </div>
                     <div class="reviewContent">
                         <div class="name">
@@ -316,9 +312,9 @@
                 </li>
                 <li class="review">
                     <div class="ellipses">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
                     </div>
                     <div class="reviewContent">
                         <div class="name">
@@ -342,9 +338,9 @@
                 </li>
                 <li class="review">
                     <div class="ellipses">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
                     </div>
                     <div class="reviewContent">
                         <div class="name">
@@ -370,9 +366,9 @@
             <ul>
                 <li class="review">
                     <div class="ellipses">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
                     </div>
                     <div class="reviewContent">
                         <div class="name">
@@ -397,9 +393,9 @@
                 </li>
                 <li class="review">
                     <div class="ellipses">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
                     </div>
                     <div class="reviewContent">
                         <div class="name">
@@ -424,9 +420,9 @@
                 </li>
                 <li class="review">
                     <div class="ellipses">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
-                        <img src="{% static 'images/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
+                        <img src="{% static 'images/index/ellipse.png' %}">
                     </div>
                     <div class="reviewContent">
                         <div class="name">
@@ -460,8 +456,8 @@
         </div>
         <div id="sendReview" class="sendReview">
             <div type="button" class="sendReviewExitImgs">
-                <img class="exitReviewImg" src="{% static 'images/exitReviewWindow.png' %}">
-                <img src="{% static 'images/ellipsExitPreviewWindow.png' %}">
+                <img class="exitReviewImg" src="{% static 'images/reviewBlock/exitReviewWindow.png' %}">
+                <img src="{% static 'images/reviewBlock/ellipsExitPreviewWindow.png' %}">
             </div>
             <div class="title">
                 <p>
@@ -484,7 +480,7 @@
         </div>
         <style>
             #sendReview {
-                background-image: url('{% static "images/blockReviewSend.png"%}');
+                background-image: url('{% static "images/reviewBlock/blockReviewSend.png"%}');
             }
         </style>
         <script>
@@ -492,25 +488,25 @@
                 document.getElementById('sendReview').style.display = 'none';
             }
             deleteElement();
-
+            
             function addElement() {
                 document.getElementById('sendReview').style.display = 'block';
             }
-
+            
             function buttonAddReview() {
                 $('.addReview').on('click', () => {
                     addElement();
                 })
             }
             buttonAddReview();
-
+            
             function sendReview() {
                 $('#send').on('click', () => {
                     window.location.reload();
                 })
             }
             sendReview();
-
+            
             function exitReviewWindow() {
                 $('.sendReviewExitImgs').on('click', () => {
                     deleteElement();
