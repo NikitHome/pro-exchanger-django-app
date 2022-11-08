@@ -8,16 +8,93 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
 {% endblock %}
 
 {% block additional_styles %}
     <style>
         body {
-            background-image: url('{% static "images/"%}');
+            background-image: url('{% static "images/contacts/bg.png"%}');
         }
     </style>
 {% endblock %}
 
 {% block content %}
-    
+{% block scripts %}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}
+    <div>
+        <div class="pageTitle">
+            <p>
+                Контактная информация
+            </p>
+        </div>
+
+        <div class="textTitle">
+            <p>
+                Техническая поддержка
+            </p>
+        </div>
+
+        <div class="text1">
+            <p>
+                Уважаемые клиенты, для Вашего удобства у нас существует<br>
+                служба поддержки клиентов, которая работает 24/7. Если у<br>
+                Вас возник вопрос, предложение или пожелание, то наши<br>
+                операторы всегда готовы Вам помочь.
+            </p>
+        </div>
+
+        <div class="contactItems">
+            <div class="mail">
+                <div class="emailImg">
+                    <img src="{% static 'images/contacts/email.png' %}">
+                </div>
+                <div class="emailText">
+                    <p class="text">
+                        Электронная почта
+                    </p>
+                    <p class="colorText">
+                        pro-exchanger@mail.ru
+                    </p>
+                </div>
+            </div>
+            <div class="telegram">
+                <div class="telegramImg">
+                    <img src="{% static 'images/contacts/telegram.png' %}">
+                </div>
+                <div class="telegramContactText">
+                    <p class="text">
+                        Наш телеграм для безналичного обмена
+                    </p>
+                    <p class="colorContactText">
+                        @Telegram
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text1">
+            <p>
+                Уважаемые клиенты, для Вашего удобства у нас существует<br>
+                служба поддержки клиентов, которая работает 24/7. Если у<br>
+                Вас возник вопрос, предложение или пожелание, то наши<br>
+                операторы всегда готовы Вам помочь.
+            </p>
+        </div>
+
+        <div class="text2">
+            <p>
+                Официальный Telegram для обменов за наличные
+            </p>
+        </div>
+
+        <div class="titleTelegram">
+            <p>
+                @Telegram
+            </p>
+        </div>
+
+        <div class="hLine"></div>
+    </div>
 {% endblock content %}
