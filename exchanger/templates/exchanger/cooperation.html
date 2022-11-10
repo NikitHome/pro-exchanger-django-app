@@ -8,12 +8,13 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cooperation.css' %}">
 {% endblock %}
 
 {% block additional_styles %}
     <style>
         body {
-            background-image: url('{% static "images/"%}');
+            background-image: url('{% static "images/cooperation/bg.png"%}');
         }
     </style>
 {% endblock %}
@@ -22,5 +23,106 @@
 {% block scripts %}
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 {% endblock %}
+    <div>
+        <div class="cooperationTitle">
+            <p>
+                Партерская программа
+            </p>
+        </div>
 
+        <div class="intermediateText">
+            <p>
+                Мы предлагаем принять участие в нашей партнерской<br>
+                программе, в которой каждый участник сможет заработать на<br>
+                обмене электронных валют.
+            </p>
+        </div>
+
+        <div class="howThisWork">
+            <p>
+                Как это работает ?
+            </p>
+        </div>
+
+        <div class="linkList">
+            <ul>
+                <li>
+                    <img src="{% static 'images/cooperation/link.png' %}">
+                    <p class="colorLinkText">
+                        СКОПИРУЙТЕ ССЫЛКУ
+                    </p>
+                    <p class="linkText">
+                        В разделе Личного кабинета<br>
+                        - Реферальная программа
+                    </p>
+                </li>
+                <li>
+                    <img src="{% static 'images/cooperation/sendLink.png' %}">
+                    <p class="colorLinkText">
+                        ПОДЕЛИТЕСЬ ССЫЛКОЙ
+                    </p>
+                    <p class="linkText">
+                        Поделитесь с<br>
+                        друзьями в соц. сетях
+                    </p>
+                </li>
+                <li>
+                    <img src="{% static 'images/cooperation/output.png' %}">
+                    <p class="colorLinkText">
+                        УДОБНЫЙ ВЫВОД
+                    </p>
+                    <p class="linkText">
+                        Выберите способ и<br>
+                        вывод денег
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="intermediateHorizontalLine"></div>
+
+        <div class="cooperationText1">
+            После регистрации Вам необходимо разместить на Ваших веб-страницах (в<br>
+            личном блоге, в подписях на форумах и т.д.) ссылку, ведущую пользователей на<br>
+            наш веб-сайт. Ссылка должна содержать уникальный код, однозначно<br>
+            идентифицирующий, что клиента привлекли Вы.
+        </div>
+
+        <div class="cooperationText2">
+            Вы зарабатываете % от оборота всех обменов реферала. Все вознаграждения<br>
+            зачисляются только при условии статуса заявки «выполнена», а также, если<br>
+            заявка не является отрицательной для сервиса.
+        </div>
+
+        <div class="ezhek">
+            <ul>
+                <li>
+                    0-5000$ - 0,5%
+                </li>
+                <li>
+                    5000-20000$ - 0,6%
+                </li>
+                <li>
+                    20000-50000$ - 0,7%
+                </li>
+                <li>
+                    50000-200000$ - 0,8%
+                </li>
+                <li>
+                    от 200000$ - 1%
+                </li>
+            </ul>
+        </div>
+
+        <div class="bobrik">
+            Мониторингам обменников
+        </div>
+
+        <div class="bobrikText">
+            Приглашаем к сотрудничеству мониторинги обменников. Мы очень рады<br>
+            новым партнерам и готовы делиться прибылью.
+        </div>
+
+        <div class="hLine"></div>
+    </div>
 {% endblock content %}

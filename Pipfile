@@ -4,9 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==2.2.28"
+django = "2.2.28"
 
 [dev-packages]
+django-user-accounts = "3.2.0"
 
 [requires]
 python_version = "3.10"
