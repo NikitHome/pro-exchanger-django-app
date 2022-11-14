@@ -14,6 +14,28 @@
 .aboutOurService {
     display: inline-flex;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutOurService {
+        min-width: 350px;
+        max-width: 480px;
+        display: block;
+        text-align: center;
+    }
+}
+
+.aboutOurService .aboutOurServiceHLine {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutOurService .aboutOurServiceHLine {
+        display: block;
+        width: 194px;
+        height: 2px;
+        background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+}
 
 .aboutOurService .leftText {
     font-family: 'Mont-Regular';
@@ -23,6 +45,14 @@
     margin-left: 240px;
     margin-top: 145px;
 }
+@media (min-width: 350px) and (max-width:480px) {
+    .aboutOurService .leftText {
+        font-size: 25px;
+        line-height: 32px;
+        margin-left: -125px;
+        margin-top: 70px;
+    }
+}
 
 .aboutOurService .rightText {
     font-family: 'Mont-Regular';
@@ -31,6 +61,14 @@
     color: #fff;
     margin-top: 165px;
     margin-left: 70px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutOurService .rightText {
+        font-size: 17px;
+        line-height: 22px;
+        margin-top: 18px;
+        margin-left: -115px;
+    }
 }
 
 
@@ -42,6 +80,13 @@
     margin-left: 175px;
     margin-top: 220px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger {
+        display: block;
+        min-width: 350px;
+        max-width: 480px;
+    }
+}
 
 .exchanger .leftBlock p {
     font-family: 'Mont-Regular';
@@ -52,6 +97,12 @@
     color: #fff;
     margin-left: 20px;
     margin-top: 0px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .leftBlock p {
+        font-size: 27px;
+        line-height: 35px;
+    }
 }
 
 .exchanger .centerBlock {
@@ -69,6 +120,12 @@
     color: #fff;
     margin-left: 20px;
     margin-top: 0px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .rightBlock P {
+        font-size: 27px;
+        line-height: 35px;
+    }
 }
 
 
