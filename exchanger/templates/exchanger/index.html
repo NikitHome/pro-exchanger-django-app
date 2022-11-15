@@ -137,7 +137,8 @@
             </script>
         </div>
         <div class="centerBlock">
-            <img src="{% static "images/index/vector.png" %}">
+            <img class="desktopCenterBlock" src="{% static "images/index/vector.png" %}">
+            <img class="mobileCenterBlock" src="{% static "images/index_mobile/vector_mobile.png" %}">
         </div>
         <div class="rightBlock">
             <p class="rightBlockText">
@@ -256,7 +257,7 @@
         <div class="list">
             <ul>
                 <li>
-                    <img src="{% static 'images/index/круглосуточно.png' %}">
+                    <img class="listImg1" src="{% static 'images/index/круглосуточно.png' %}">
                     <p class="colorText colorText1">
                         Круглосуточно
                     </p>
@@ -266,7 +267,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="{% static 'images/index/конфиденциальность.png' %}">
+                    <img class="listImg2" src="{% static 'images/index/конфиденциальность.png' %}">
                     <p class="colorText colorText2">
                         Конфиденциальность
                     </p>
@@ -277,7 +278,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="{% static 'images/index/поддержка.png' %}">
+                    <img class="listImg3" src="{% static 'images/index/поддержка.png' %}">
                     <p class="colorText colorText3">
                         Поддержка
                     </p>
@@ -288,7 +289,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="{% static 'images/index/скорость.png' %}">
+                    <img class="listImg4" src="{% static 'images/index/скорость.png' %}">
                     <p class="colorText colorText4">
                         Скорость
                     </p>
@@ -305,8 +306,12 @@
         <div class="title">
             Отзывы Pro-Exchanger
         </div>
+        <div class="titleMobile">
+            Отзывы<br>
+            Pro-Exchanger
+        </div>
         <div class="reviews">
-            <ul>
+            <ul class="review1of2Block">
                 <li class="review">
                     <div class="ellipses">
                         <img src="{% static 'images/index/ellipse.png' %}">
@@ -386,7 +391,7 @@
                     </div>
                 </li>
             </ul>
-            <ul>
+            <ul class="review2of2Block">
                 <li class="review">
                     <div class="ellipses">
                         <img src="{% static 'images/index/ellipse.png' %}">

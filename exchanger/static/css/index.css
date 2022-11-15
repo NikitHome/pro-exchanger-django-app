@@ -32,7 +32,7 @@
         width: 194px;
         height: 2px;
         background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
-        margin-left: 80px;
+        margin-left: 75px;
         margin-top: -20px;
     }
 }
@@ -49,7 +49,7 @@
     .aboutOurService .leftText {
         font-size: 25px;
         line-height: 32px;
-        margin-left: -125px;
+        margin-left: -135px;
         margin-top: 70px;
     }
 }
@@ -67,7 +67,7 @@
         font-size: 17px;
         line-height: 22px;
         margin-top: 18px;
-        margin-left: -115px;
+        margin-left: -130px;
     }
 }
 
@@ -85,6 +85,8 @@
         display: block;
         min-width: 350px;
         max-width: 480px;
+        margin-left: 5;
+        margin-top: 140px;
     }
 }
 
@@ -102,6 +104,7 @@
     .exchanger .leftBlock p {
         font-size: 27px;
         line-height: 35px;
+        margin-left: 0;
     }
 }
 
@@ -109,6 +112,32 @@
     margin-top: 100px;
     margin-left: 40px;
     margin-right: 40px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .centerBlock {
+        margin-top: -16;
+        margin-left: 135px;
+        margin-bottom: 16px;
+    }
+}
+
+.exchanger .centerBlock .desktopCenterBlock {
+    display: block;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .centerBlock .desktopCenterBlock {
+        display: none;
+    }
+}
+
+.exchanger .centerBlock .mobileCenterBlock {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .centerBlock .mobileCenterBlock {
+        display: block;
+        margin-top: 0;
+    }
 }
 
 .exchanger .rightBlock p {
@@ -125,6 +154,7 @@
     .exchanger .rightBlock P {
         font-size: 27px;
         line-height: 35px;
+        margin-left: 0;
     }
 }
 
@@ -139,6 +169,12 @@
     font-style: normal;
     font-weight: 600;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .select-menu {
+        width: 327px;
+        height: 100px;
+    }
+}
 
 .select-menu .select-btn {
     display: flex;
@@ -152,6 +188,12 @@
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-top: -18;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .select-menu .select-btn {
+        height: 15px;
+        margin-top: -12;
+    }
 }
 
 .select-menu.active .select-btn i {
@@ -181,6 +223,11 @@
     align-items: center;
     background: #fff;
     margin-left: -2px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .options .option {
+        height: 40px;
+    }
 }
 
 .options .option img {
@@ -241,6 +288,11 @@ span.selected1.option-text {
     margin-right: 60px;
     margin-left: 250px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .arrow {
+        display: none;
+    }
+}
 
 .arrow-bottom {
     transform: rotate(135deg);
@@ -253,6 +305,13 @@ span.selected1.option-text {
 .intermediateBlock1 {
     margin-top: 100px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .intermediateBlock1 {
+        margin-top: -30px;
+        width: 350px;
+        margin-left: -5px;
+    }
+}
 
 .intermediateBlock1 .text {
     font-family: 'Mont-Regular';
@@ -261,6 +320,12 @@ span.selected1.option-text {
     line-height: 19px;
     color: #fff;
     text-align: center;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .intermediateBlock1 .text {
+        width: 280px;
+        margin-left: 30px;
+    }
 }
 
 .intermediateBlock1 .imagesGroup {
@@ -365,6 +430,17 @@ span.selected1.option-text {
     text-align: center;
     margin-top: 120px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock {
+        width: 350px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .title {
+        width: 285px;
+    }
+}
 
 .whyOurBlock .title p {
     font-family: 'Mont-Regular';
@@ -372,6 +448,14 @@ span.selected1.option-text {
     font-size: 55px;
     line-height: 70px;
     color: #fff;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .title p {
+        font-size: 30px;
+        line-height: 38px;
+        margin-top: -80px;
+        margin-left: 55px;
+    }
 }
 
 .whyOurBlock .list {
@@ -382,6 +466,11 @@ span.selected1.option-text {
 .whyOurBlock .list ul {
     display: inline-flex;
     list-style: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul {
+        display: block;
+    }
 }
 
 .whyOurBlock .list ul li .colorText {
@@ -397,16 +486,67 @@ span.selected1.option-text {
     margin-top: 15;
 }
 
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li img {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .listImg1 {
+        margin-left: 50px;
+    }
+}
+
 .whyOurBlock .list ul li .colorText1 {
     margin-top: 38px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .colorText1 {
+        margin-left: 90px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .listImg2 {
+        margin-left: 50px;
+    }
 }
 
 .whyOurBlock .list ul li .colorText2 {
     margin-top: 38px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .colorText2 {
+        margin-left: 94px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .listImg3 {
+        margin-left: 52px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .colorText3 {
+        margin-left: 90px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .listImg4 {
+        margin-left: 45px;
+    }
+}
 
 .whyOurBlock .list ul li .colorText4 {
     margin-top: 32px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .colorText4 {
+        margin-left: 95px;
+    }
 }
 
 .whyOurBlock .list ul li .text {
@@ -420,21 +560,46 @@ span.selected1.option-text {
     font-size: 18px;
     line-height: 23px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text {
+        margin-top: -15;
+    }
+}
 
 .whyOurBlock .list ul li .text1 {
     margin-left: 30px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text1 {
+        margin-left: 65px;
+    }
 }
 
 .whyOurBlock .list ul li .text2 {
     margin-left: 30px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text2 {
+        margin-left: 70px;
+    }
+}
 
 .whyOurBlock .list ul li .text3 {
     margin-left: 32px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text3 {
+        margin-left: 65px;
+    }
+}
 
 .whyOurBlock .list ul li .text4 {
     margin-left: 34px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text4 {
+        margin-left: 70px;
+    }
 }
 
 
@@ -443,6 +608,11 @@ span.selected1.option-text {
 
 .reviewsBlock {
     margin-top: 60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock {
+        width: 350px;
+    }
 }
 
 .reviewsBlock .title {
@@ -455,6 +625,27 @@ span.selected1.option-text {
     line-height: 70px;
     margin-top: 60px;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .title {
+        display: none;
+    }
+}
+
+.reviewsBlock .titleMobile {
+    text-align: center;
+    display: none;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    color: #fff;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .titleMobile {
+        display: block;
+    }
+}
 
 .reviewsBlock .reviews {
     margin-left: 165px;
@@ -464,6 +655,17 @@ span.selected1.option-text {
 .reviewsBlock .reviews ul {
     list-style: none;
     display: inline-flex;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .reviews ul {
+        display: block;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .reviews .review2of2Block {
+        display: none;
+    }
 }
 
 .reviewsBlock .reviews .review {
