@@ -47,6 +47,16 @@ body {
     width: 80%;
 }
 
+.navbar .headerLogoImg {
+    height: 60px;
+    cursor: pointer;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .navbar .headerLogoImg {
+        display: none;
+    }
+}
+
 .navbarButtons {
     display: inline-flex;
 }
@@ -65,7 +75,7 @@ body {
 
 .navbarItems {
     display: inline-flex;
-    padding-left: 0;
+    padding-left: 50px;
     margin-top: 12px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
@@ -166,18 +176,20 @@ body {
     #languageSelect {
         font-size: 14px;
         line-height: 18px;
-        margin-left: 97px;
+        margin-left: 90px;
         margin-top: -40px;
+        margin-right: 8px;
+        padding-right: 0;
     }
 }
 
 .languageSelect {
-    padding-left: 20;
+    margin-left: -20px;
     padding-right: 0;
 }
 @media (min-width: 350px) and (max-width: 480px) {
     .languageSelect {
-        margin-top: -6;
+        margin-top: -6px;
     }
 }
 
@@ -250,48 +262,61 @@ body {
 
 /* footer styles */
 
-footer {
+.desktopFooter {
     margin: 0 10% 0 10%;
     bottom: 0;
     width: 80%;
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    .desktopFooter {
+        display: none;
+    }
+}
 
-.footerTop {
+.desktopFooter .footerTop {
     display: inline-flex;
     margin-top: 15px;
     margin-left: -20px;
 }
 
-.footerBottom .rightsText {
+.desktopFooter .footerTop .footerNavbarButtons .footerLogoImg {
+    height: 40px;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.desktopFooter .footerBottom .rightsText {
     color: #fff;
     margin-top: -20px;
     padding-bottom: 16px;
     margin-left: 25px;
 }
 
-.footerNavbarButtons {
+.desktopFooter .footerNavbarButtons {
     display: inline-flex;
 }
 
-.footerNavbarButtons ul li a {
+.desktopFooter .footerNavbarButtons ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-.footerNavbarButtons ul {
-    margin-left: 40px;
+.desktopFooter .footerNavbarButtons ul {
+    margin-left: 70px;
     margin-top: 30px;
 }
 
-.footerNavbarItems {
+.desktopFooter .footerNavbarItems {
     display: inline-flex;
 }
 
-.footerNavbarItems li {
+.desktopFooter .footerNavbarItems li {
     list-style: none;
 }
 
-.footerVerticalLine {
+.desktopFooter .footerVerticalLine {
     margin-top: -3px;
     margin-left: 10px;
     margin-right: 10px;
@@ -299,31 +324,31 @@ footer {
     height: 26px;
 }
 
-.telegram {
+.desktopFooter .telegram {
     display: inline-flex;
-    margin-left: 280px;
+    margin-left: 120px;
     margin-top: 10px;
 }
 
-.telegramText {
+.desktopFooter .telegramText {
     color: #fff;
     font-family: 'Mont-Regular';
     font-weight: normal;
 }
 
-.telegramImage {
+.desktopFooter .telegramImage {
     margin-top: 18px;
     margin-right: 15px;
 }
 
-.telegramLink {
+.desktopFooter .telegramLink {
     color: rgba(0, 255, 240, 1);
     font-family: 'Mont-Regular';
     font-weight: normal;
     margin-top: -17px;
 }
 
-.footerLogo {
+.desktopFooter .footerLogo {
     color: #fff;
     font-family: 'Flamenco', cursive;
     font-weight: normal;
@@ -334,8 +359,17 @@ footer {
     font-size: 30px;
 }
 
-.footerNavbarItemText {
+.desktopFooter .footerNavbarItemText {
     font-family: 'Mont-Regular';
     font-weight: normal;
     margin-top: 0;
+}
+
+.mobileFooter {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .mobileFooter {
+        display: block;
+    }
 }

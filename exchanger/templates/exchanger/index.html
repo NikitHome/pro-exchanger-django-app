@@ -59,6 +59,19 @@
             <p class="leftBlockText">
                 Отдаете коины  
             </p>
+            <div class="walletChange1">
+                <div class="walletChangeBg">
+                    <a class="coins1">
+                        Коины
+                    </a>
+                    <a class="wallets1">
+                        Кошельки
+                    </a>
+                </div>
+            </div>
+            <script>
+
+            </script>
             <div class="select-menu" id="select-menu">
                 <div class="select-btn">
                     <span id="selectCoin1" class="sBtn-text selected">
@@ -144,6 +157,19 @@
             <p class="rightBlockText">
                 Получите коины
             </p>
+            <div class="walletChange2">
+                <div class="walletChangeBg">
+                    <a class="coins2">
+                        Коины
+                    </a>
+                    <a class="wallets2">
+                        Кошельки
+                    </a>
+                </div>
+            </div>
+            <script>
+
+            </script>
             <div class="select-menu select-menu1" id="select-menu1">
                 <div class="select-btn select-btn1">
                     <span id="selectCoin2" class="sBtn-text sBtn-text1 selected">
@@ -492,6 +518,9 @@
                     Оставить отзыв
                 </p>
             </div>
+            <div class="mobileSendReviewTitle">
+                Оставить отзыв
+            </div>
             <div class="email">
                 <input placeholder="Ваш e-mail" />
             </div>
@@ -509,6 +538,11 @@
         <style>
             #sendReview {
                 background-image: url('{% static "images/reviewBlock/blockReviewSend.png"%}');
+            }
+            @media (min-width: 350px) and (max-width: 480px) {
+                #sendReview {
+                    background-image: url('{% static "images/reviewBlock/mobileReview.png" %}')
+                }
             }
         </style>
         <script>
@@ -548,6 +582,10 @@
         <div class="title">
             О сервисе Pro-Exchanger
         </div>
+        <div class="mobileTitle">
+            О сервисе<br>
+            Pro-Exchanger
+        </div>
         <div class="aboutText">
             <p class="slimText">
                 Pro-Exchanger - это выгодный сервис по обмену большинства<br>
@@ -574,6 +612,12 @@
                 Помимо абсолютной надежности,<br>
                 Pro-Exchanger имеет и ряд других<br>
                 достоинств:<br>
+            </p>
+            <p class="boldTextMobile">
+                Помимо абсолютной<br>
+                надежности, Pro-<br>
+                Exchanger имеет и ряд<br>
+                других достоинств:
             </p>
         </div>
         <div class="aboutList">
@@ -611,10 +655,26 @@
                         операций в короткий срок
                     </p>
                 </li>
+                <li class="listText1Mobile">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Гарантия проведения<br>
+                        всех операций в<br>
+                        короткий срок
+                    </p>
+                </li>
                 <li class="listText2">
                     <div class="vLine"></div>
                     <p class="listText">
                         Постоянное развитие и<br>
+                        улучшение сервиса
+                    </p>
+                </li>
+                <li class="listText2Mobile">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Постоянное<br>
+                        развитие и<br>
                         улучшение сервиса
                     </p>
                 </li>
@@ -623,6 +683,14 @@
                     <p class="listText">
                         Широкий выбор<br>
                         направлений для обмена
+                    </p>
+                </li>
+                <li class="listText3Mobile">
+                    <div class="vLine"></div>
+                    <p class="listText">
+                        Широкий выбор<br>
+                        направлений для<br>
+                        обмена
                     </p>
                 </li>
             </ul>

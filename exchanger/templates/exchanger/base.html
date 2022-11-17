@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="{% static "images/header/logo.png" %}">
     <title>
         {% block title %}
             Pro-exchanger
@@ -25,9 +26,7 @@
 {% endblock %}
 
     <nav class="navbar">
-        <a class="logo" href="{% url 'exchanger:index' %}">
-            LOGO
-        </a>
+        <img class="headerLogoImg" src="{% static 'images/header/logo.png' %}">
         <div class="navbarButtons">
             <ul class="navbarItems">
                 <li class="navbarItem">
@@ -143,12 +142,10 @@
             {% endblock content %}
         </div> 
     </main>
-    <footer>
+    <footer class="desktopFooter">
         <div class="footerTop">
             <div class="footerNavbarButtons">
-                <a class="footerLogo" href="{% url 'exchanger:index' %}">
-                    LOGO
-                </a>
+                <img class="footerLogoImg" src="{% static 'images/header/logo.png' %}">
                 <ul class="footerNavbarItems">
                     <li class="footerNavbarItem">
                         <a class="footerNavbarItemText" href="{% url 'exchanger:index' %}">
@@ -159,16 +156,16 @@
                         <div class="footerVerticalLine"></div>
                     </li>
                     <li class="footerNavbarItem">
-                        <a class="footerNavbarItemText" href="{% url 'exchanger:about_us' %}">
-                            О нас
+                        <a class="footerNavbarItemText" href="{% url 'exchanger:cooperation' %}">
+                            Сотрудничество
                         </a>
                     </li>
                     <li class="footerNavbarItem">
                         <div class="footerVerticalLine"></div>
                     </li>
                     <li class="footerNavbarItem">
-                        <a class="footerNavbarItemText" href="{% url 'exchanger:rules' %}">
-                            Правила
+                        <a class="footerNavbarItemText" href="{% url 'exchanger:exchange_rules' %}">
+                            Правила обмена
                         </a>
                     </li>
                     <li class="footerNavbarItem">
@@ -177,14 +174,6 @@
                     <li class="footerNavbarItem">
                         <a class="footerNavbarItemText" href="{% url 'exchanger:partners' %}">
                             Партнёры
-                        </a>
-                    </li>
-                    <li class="footerNavbarItem">
-                        <div class="footerVerticalLine"></div>
-                    </li>
-                    <li class="footerNavbarItem">
-                        <a class="footerNavbarItemText" href="{% url 'exchanger:FAQ' %}"> 
-                            FAQ
                         </a>
                     </li>
                     <li class="footerNavbarItem" >
@@ -199,7 +188,7 @@
             </div>
             <div class="telegram">
                 <div class="telegramImage">
-                    <img src="{% static 'images/footer/telegramImage.png' %}">
+                    <img src="{% static "images/footer/telegramImage.png" %}">
                 </div>
                 <div>
                     <p class="telegramText">
@@ -215,6 +204,64 @@
             <p class="rightsText">
                 © 2022 Все права защищены
             </p>
+        </div>
+    </footer>
+    <footer class="mobileFooter">
+        <div class="mobileFooterTop">
+            <div class="mobileFooterTop-Left">
+                <img src="{% static "images/header/logo.png" %}">
+                <p>
+                    © 2022 Все права защищены
+                </p>
+            </div>
+            <div class="mobileFooterTop-Right">
+                <div class="mobileOurTelegram">
+                    <p>
+                        Наш Telegram
+                    </p>
+                </div>
+                <div class="mobileTelegram">
+                    <img src="{% static "images/footer/mobileTelegram.png" %}">
+                    <p>
+                        @Telegram
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mobileFooterBottom">
+            <div class="mobileFooterBottom-Left">
+                <ul>
+                    <li>
+                        <a href="{% url 'exchanger:index' %}">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'exchanger:cooperation' %}">
+                            Сотрудничество
+                        </a>
+                    </li>
+                    <li class="footerNavbarItem">
+                        <a href="{% url 'exchanger:exchange_rules' %}">
+                            Правила обмена
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobileFooterBottom-Right">
+                <ul>
+                    <li>
+                        <a href="{% url 'exchanger:partners' %}">
+                            Партнёры
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'exchanger:contacts' %}">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
