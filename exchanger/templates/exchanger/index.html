@@ -57,7 +57,7 @@
     <div class="exchanger">
         <div class="leftBlock">
             <p class="leftBlockText">
-                Отдаете коины  
+                Отдаете
             </p>
             <div class="walletChange1">
                 <div class="walletChangeBg">
@@ -155,7 +155,7 @@
         </div>
         <div class="rightBlock">
             <p class="rightBlockText">
-                Получите коины
+                Получите
             </p>
             <div class="walletChange2">
                 <div class="walletChangeBg">
@@ -518,7 +518,7 @@
                     Оставить отзыв
                 </p>
             </div>
-            <div class="mobileSendReviewTitle">
+            <div id="mobileSendReviewTitle" class="mobileSendReviewTitle">
                 Оставить отзыв
             </div>
             <div class="email">
@@ -535,6 +535,11 @@
                 </button>
             </div>
         </div>
+        <div id="thxForReviewp" class="thxForReviewp">
+            <p>
+                Отправлено, Спасибо за ваш отзыв!
+            </p>
+        </div>
         <style>
             #sendReview {
                 background-image: url('{% static "images/reviewBlock/blockReviewSend.png"%}');
@@ -544,27 +549,45 @@
                     background-image: url('{% static "images/reviewBlock/mobileReview.png" %}')
                 }
             }
+
+            .thxForReviewp {
+                background-image: url('{% static "images/reviewBlock/blockReviewSend.png"%}');
+            }
+            @media (min-width: 350px) and (max-width: 480px) {
+                .thxForReviewp {
+                    background-image: url('{% static "images/reviewBlock/mobileReview.png" %}')
+                }
+            }
         </style>
         <script>
-            function deleteElement() {
+            function deleteElement1() {
                 document.getElementById('sendReview').style.display = 'none';
             }
-            deleteElement();
+            deleteElement1();
             
-            function addElement() {
+            function addElement1() {
                 document.getElementById('sendReview').style.display = 'block';
+            }
+
+            function addElement2() {
+                document.getElementById('thxForReviewp').style.display = 'block';
             }
             
             function buttonAddReview() {
                 $('.addReview').on('click', () => {
-                    addElement();
+                    addElement1();
                 })
             }
             buttonAddReview();
             
             function sendReview() {
                 $('#send').on('click', () => {
-                    window.location.reload();
+                    deleteElement1();
+                    addElement2();
+
+                    setTimeout(function() {
+                        window.location.reload();
+                    }, 2000)
                 })
             }
             sendReview();

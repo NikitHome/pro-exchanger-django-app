@@ -88,11 +88,11 @@ body {
     text-decoration: none;
 }
 
-.menuButton {
+.menuMButton {
     display: none;
 }
 @media (min-width: 350px) and (max-width: 480px) {
-    .menuButton {
+    .menuMButton {
         display: block;
         background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
         border-radius: 6px;
@@ -102,24 +102,24 @@ body {
         margin-left: -115px;
         margin-top: -16;
     }
-    .hLine {
+    .hMsLine {
         margin-left: 2px;
     }
-    .hLine1 {
+    .hMLine1 {
         width: 33px;
         height: 4px;
         background-color: #fff;
         border: none;
         margin-bottom: 8px;
     }
-    .hLine2 {
+    .hMLine2 {
         width: 33px;
         height: 4px;
         background-color: #fff;
         border: none;
         margin-bottom: 8px;
     }
-    .hLine3 {
+    .hMLine3 {
         width: 20px;
         height: 4px;
         background-color: #fff;
@@ -367,9 +367,104 @@ body {
 
 .mobileFooter {
     display: none;
+    width: 350px;
 }
 @media (min-width: 350px) and (max-width: 480px) {
     .mobileFooter {
         display: block;
     }
+}
+
+.mobileFooter .mobileFooterTop {
+    display: inline-flex;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Left {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Left img {
+    height: 40px;
+    width: auto;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Left p {
+    font-family: 'Mont-Regular';
+    font-weight: normal;
+    color: #fff;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    margin-top: 6px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right {
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right .mobileOurTelegram {
+    font-family: 'Mont-Regular';
+    font-weight: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    line-height: 23px;
+    margin-left: 6px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right .mobileTelegram {
+    display: inline-flex;
+    margin-top: -15px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right .mobileTelegram img {
+    width: auto;
+    height: 25px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right .mobileTelegram p {
+    margin-left: 20px;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(0, 255, 240, 1);
+    margin-left: 5;
+    margin-top: 0;
+}
+
+.mobileFooter .mobileFooterBottom {
+    display: inline-flex;
+    margin-left: -30px;
+}
+
+.mobileFooter .mobileFooterBottom .mobileFooterBottom-Left ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.mobileFooter .mobileFooterBottom .mobileFooterBottom-Left ul li a {
+    text-decoration: none;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.mobileFooter .mobileFooterBottom .mobileFooterBottom-Right ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.mobileFooter .mobileFooterBottom .mobileFooterBottom-Right ul li a {
+    text-decoration: none;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
 }
