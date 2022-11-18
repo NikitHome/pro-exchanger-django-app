@@ -17,6 +17,7 @@ body {
 @media (min-width: 350px) and (max-width: 480px) {
     body {
         width: 350px;
+        box-sizing: border-box;
     }
 }
 

@@ -20,6 +20,7 @@
         max-width: 480px;
         display: block;
         text-align: center;
+        box-sizing: border-box;
     }
 }
 
@@ -34,6 +35,7 @@
         background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
         margin-left: 75px;
         margin-top: -20px;
+        box-sizing: border-box;
     }
 }
 
@@ -51,6 +53,7 @@
         line-height: 32px;
         margin-left: -135px;
         margin-top: 70px;
+        box-sizing: border-box;
     }
 }
 
@@ -68,6 +71,7 @@
         line-height: 22px;
         margin-top: 18px;
         margin-left: -130px;
+        box-sizing: border-box;
     }
 }
 
@@ -87,6 +91,7 @@
         max-width: 480px;
         margin-left: 5;
         margin-top: 90px;
+        box-sizing: border-box;
     }
 }
 
@@ -106,6 +111,7 @@
         font-size: 27px;
         line-height: 35px;
         margin-left: 0;
+        box-sizing: border-box;
     }
 }
 
@@ -129,6 +135,7 @@
         height: 55px;
         font-size: 20px;
         line-height: 26px;
+        box-sizing: border-box;
     }
 }
 
@@ -138,6 +145,7 @@
 @media (min-width: 350px) and (max-width: 480px) {
     .exchanger .leftBlock .walletChange1 .walletChangeBg {
         padding-top: 16px;
+        box-sizing: border-box;
     }
 }
 
@@ -156,6 +164,7 @@
         margin-top: -16;
         margin-left: 135px;
         margin-bottom: 16px;
+        box-sizing: border-box;
     }
 }
 
@@ -165,6 +174,7 @@
 @media (min-width: 350px) and (max-width: 480px) {
     .exchanger .centerBlock .desktopCenterBlock {
         display: none;
+        box-sizing: border-box;
     }
 }
 
@@ -175,6 +185,7 @@
     .exchanger .centerBlock .mobileCenterBlock {
         display: block;
         margin-top: 0;
+        box-sizing: border-box;
     }
 }
 
@@ -194,6 +205,7 @@
         font-size: 27px;
         line-height: 35px;
         margin-left: 0;
+        box-sizing: border-box;
     }
 }
 
@@ -217,6 +229,7 @@
         height: 55px;
         font-size: 20px;
         line-height: 26px;
+        box-sizing: border-box;
     }
 }
 
@@ -226,6 +239,7 @@
 @media (min-width: 350px) and (max-width: 480px) {
     .exchanger .rightBlock .walletChange2 .walletChangeBg {
         padding-top: 16px;
+        box-sizing: border-box;
     }
 }
 
@@ -249,6 +263,7 @@
     .select-menu {
         width: 327px;
         height: 100px;
+        box-sizing: border-box;
     }
 }
 
