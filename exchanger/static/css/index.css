@@ -1345,7 +1345,7 @@ span.selected1.option-text {
 }
 @media (min-width: 350px) and (max-width: 480px) {
     .bottomHorizontalLine {
-        width: 396px;
+        width: 390px;
         margin-left: -8;
         padding-left: 0;
     }

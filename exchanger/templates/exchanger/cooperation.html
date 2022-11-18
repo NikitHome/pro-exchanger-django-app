@@ -16,6 +16,11 @@
         body {
             background-image: url('{% static "images/cooperation/bg.png"%}');
         }
+        @media (min-width: 350px) and (max-width: 480px) {
+            body {
+                background-image: url('{% static "images/cooperation_mobile/cooperation.png"%}');
+            }
+        }
     </style>
 {% endblock %}
 
@@ -47,6 +52,8 @@
             </p>
         </div>
 
+        <div class="cooperationHLine"></div>
+
         <div class="intermediateText">
             <p>
                 Мы предлагаем принять участие в нашей партнерской<br>
@@ -65,30 +72,43 @@
             <ul>
                 <li>
                     <img src="{% static 'images/cooperation/link.png' %}">
-                    <p class="colorLinkText">
+                    <p class="colorLinkText colorLinkText1">
                         СКОПИРУЙТЕ ССЫЛКУ
                     </p>
-                    <p class="linkText">
+                    <p class="linkText linkText1">
                         В разделе Личного кабинета<br>
                         - Реферальная программа
+                    </p>
+                    <p class="linkTextMobile linkTextMobile1">
+                        В разделе Личного<br>
+                        кабинета - Реферальная<br>
+                        программа
                     </p>
                 </li>
                 <li>
                     <img src="{% static 'images/cooperation/sendLink.png' %}">
-                    <p class="colorLinkText">
+                    <p class="colorLinkText colorLinkText2">
                         ПОДЕЛИТЕСЬ ССЫЛКОЙ
                     </p>
-                    <p class="linkText">
+                    <p class="linkText linkText2">
                         Поделитесь с<br>
                         друзьями в соц. сетях
+                    </p>
+                    <p class="linkTextMobile linkTextMobile2">
+                        Поделитесь с друзьями в<br>
+                        соц. сетях
                     </p>
                 </li>
                 <li>
                     <img src="{% static 'images/cooperation/output.png' %}">
-                    <p class="colorLinkText">
+                    <p class="colorLinkText colorLinkText3">
                         УДОБНЫЙ ВЫВОД
                     </p>
-                    <p class="linkText">
+                    <p class="linkText linkText3">
+                        Выберите способ и<br>
+                        вывод денег
+                    </p>
+                    <p class="linkTextMobile linkTextMobile3">
                         Выберите способ и<br>
                         вывод денег
                     </p>
@@ -138,6 +158,12 @@
         <div class="bobrikText">
             Приглашаем к сотрудничеству мониторинги обменников. Мы очень рады<br>
             новым партнерам и готовы делиться прибылью.
+        </div>
+        <div class="bobrikTextMobile">
+            Приглашаем к сотрудничеству<br>
+            мониторинги обменников. Мы<br>
+            очень рады новым партнерам и<br>
+            готовы делиться прибылью.
         </div>
 
         <div class="hLine"></div>
