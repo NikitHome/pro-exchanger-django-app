@@ -16,6 +16,12 @@
         body {
             background-image: url('{% static "images/contacts/bg.png"%}');
         }
+        @media (min-width: 350px) and (max-width: 480px) {
+            body {
+                background-image: url('{% static "images/contacts_mobile/contacts.png" %}');
+                width: 350px;
+            }
+        }
     </style>
 {% endblock %}
 
@@ -110,6 +116,7 @@
             <p>
                 @Telegram
             </p>
+            <img src="{% static 'images/footer/mobileTelegram.png' %}">
         </div>
 
         <div class="hLine"></div>
