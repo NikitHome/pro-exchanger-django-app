@@ -287,3 +287,9 @@ div .hLine {
     height: 6px;
     background-color: rgba(0, 178, 255, 0.51);
 }
+@media (min-width: 350px) and (max-width: 480px) {
+    div .hLine {
+        width: 405px;
+        margin-left: -8px;
+    }
+}

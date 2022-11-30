@@ -307,7 +307,7 @@
 
 .options .option {
     display: flex;
-    height: 40px;
+    height: 60px;
     cursor: pointer;
     padding: 0 16px;
     border-radius: 8px;
@@ -322,9 +322,9 @@
 }
 
 .options .option img {
-    height: 24px;
-    width: 24px;
-    margin-left: -11px;
+    height: 40px;
+    width: 40px;
+    margin-left: -5px;
 }
 
 .options .option:hover {
@@ -337,7 +337,7 @@
 }
 
 .option .option-text {
-    font-size: 18px;
+    font-size: 22px;
     color: #333;
     margin-left: 20px;
 }
@@ -365,6 +365,27 @@ span.selected1.sBtn-text {
 span.selected1.option-text {
     animation: none;
     background-color: transparent;
+}
+
+.intermediateListLine {
+    list-style: none;
+    margin-bottom: 10px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .intermediateListLine {
+        margin-top: 10px;
+    }
+}
+
+.coinListHorLine {
+    width: 410px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .coinListHorLine {
+        width: 285px;
+    }
 }
 
 
