@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.howThisWork {
+    margin-left: 145px;
+    margin-top: 100px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .howThisWork {
+        margin-left: 20px;
+        width: 350px;
+        margin-top: 250px;
+    }
+}
+
+.howThisWork p {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    color: #fff;
+    line-height: 34px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .howThisWork p {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}

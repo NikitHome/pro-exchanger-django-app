@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.item3 {
+    margin-top: 70px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .item3 {
+        width: 350px;
+    }
+}
+
+.item3 .rulesItemTitleText3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 34px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    margin-left: 160px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .item3 .rulesItemTitleText3 {
+        margin-left: 0;
+        font-size: 23px;
+        line-height: 34px;
+        margin-left: 10px;
+    }
+}
+
+.item3 .rulesItemText3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    margin-left: 220px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .item3 .rulesItemText3 {
+        display: none;
+    }
+}
+
+.item3 .rulesItemText3Mobile {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .item3 .rulesItemText3Mobile {
+        display: block;
+        font-style: normal;
+        font-family: 'Mont-Regular';
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        margin-left: 25px;
+    }
+}

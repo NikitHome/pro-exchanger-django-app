@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.select-menu {
+    width: 453px;
+    height: 73px;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .select-menu {
+        width: 327px;
+        height: 100px;
+        box-sizing: border-box;
+    }
+}
+
+.select-menu .select-btn {
+    display: flex;
+    height: 40px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: -18;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .select-menu .select-btn {
+        height: 15px;
+        margin-top: -12;
+    }
+}
+
+.select-menu.active .select-btn i {
+    transform: rotate(-180deg);
+}
+
+.select-menu .options {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.select-menu.active .options {
+    display: block;
+}
+
+.options .option {
+    display: flex;
+    height: 60px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+    margin-left: -2px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .options .option {
+        height: 40px;
+    }
+}
+
+.options .option img {
+    height: 40px;
+    width: 40px;
+    margin-left: -5px;
+}
+
+.options .option:hover {
+    background: #f2f2f2;
+}
+
+.option i {
+    font-size: 25px;
+    margin-right: 12px;
+}
+
+.option .option-text {
+    font-size: 22px;
+    color: #333;
+    margin-left: 20px;
+}
+
+span.selected.sBtn-text {
+    animation: none;
+    background-color: transparent;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    display: inline-flex;
+}
+
+span.selected.option-text {
+    animation: none;
+    background-color: transparent;
+}
+
+span.selected1.sBtn-text {
+    animation: none;
+    background-color: transparent;
+}
+
+span.selected1.option-text {
+    animation: none;
+    background-color: transparent;
+}
+
+.intermediateListLine {
+    list-style: none;
+    margin-bottom: 10px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .intermediateListLine {
+        margin-top: 10px;
+    }
+}
+
+.coinListHorLine {
+    width: 410px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .coinListHorLine {
+        width: 285px;
+    }
+}

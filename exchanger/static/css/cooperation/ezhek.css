@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.ezhek {
+    margin-top: 70px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .ezhek {
+        margin-left: 0;
+        width: 350px;
+        margin-top: 60px;
+    }
+}
+
+.ezhek ul li {
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 41px;
+    font-family: 'Mont-Regular';
+    margin-left: 200px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .ezhek ul li {
+        font-size: 20px;
+        line-height: 32px;
+        margin-left: 0;
+    }
+}

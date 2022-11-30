@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.titleTelegram {
+    margin-top: -40px;
+    margin-left: 160px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .titleTelegram {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 350px;
+        display: inline-flex;
+    }
+}
+
+.titleTelegram p {
+    color: rgba(0, 255, 240, 1);
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 190.3%;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .titleTelegram p {
+        font-size: 30px;
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+}
+
+.titleTelegram img {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .titleTelegram img {
+        display: block;
+        height: 25px;
+        width: auto;
+        margin-top: -14px;
+        margin-left: 10px;
+    }
+}

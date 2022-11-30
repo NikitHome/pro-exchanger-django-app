@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.contactItems {
+    display: inline-flex;
+    margin-left: 160px;
+    margin-top: 100px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .contactItems {
+        display: block;
+        width: 350px;
+        margin-left: 10px;
+        margin-top: 60px;
+    }
+}
+
+.contactItems .mail {
+    display: inline-flex;
+}
+
+.contactItems .telegram {
+    display: inline-flex;
+    margin-left: 100px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .contactItems .telegram {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+.contactItems .mail .text {
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 190.3%;
+    margin-left: 20px;
+    margin-top: -12px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .contactItems .mail .text {
+        margin-top: 0px;
+        margin-left: 10px;
+        font-size: 19px;
+    }
+}
+
+.contactItems .mail .colorText {
+    color: rgba(0, 255, 240, 1);
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 190.3%;
+    margin-left: 20px;
+    margin-top: -37px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .contactItems .mail .colorText {
+        margin-top: -30px;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+}
+
+.contactItems .telegram .telegramContactText {
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 190.3%;
+    margin-left: 20px;
+    margin-top: -48px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .contactItems .telegram .telegramContactText {
+        font-size: 19px;
+        margin-top: -25px;
+        margin-left: 10px;
+        line-height: 1;
+    }
+}
+
+.contactItems .telegram .colorContactText {
+    color: rgba(0, 255, 240, 1);
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 190.3%;
+    margin-top: -35px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .contactItems .telegram .colorContactText {
+        margin-top: -20px;
+        margin-left: 0;
+        font-size: 17px;
+    }
+}

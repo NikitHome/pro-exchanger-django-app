@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.sendReview {
+    width: 925px;
+    height: 604px;
+    position: fixed;
+    top: 10%;
+    left: 18%;
+    border-radius: 10px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .sendReview {
+        width: 327px;
+        height: 604px;
+        top: -320px;
+        left: 4px;
+        position: relative;
+    }
+}
+
+.sendReview .mobileSendReviewTitle {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .sendReview .mobileSendReviewTitle {
+        display: block;
+        font-family: 'Mont-Regular';
+        color: #fff;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 45px;
+        padding-top: 75px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .sendReview .mobileSendReviewTitle {
+        font-family: 'Mont-Regular';
+        color: #fff;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+.sendReview .sendReviewExitImgs {
+    position: absolute;
+    right: 15;
+    top: 15;
+    cursor: pointer;
+}
+
+.sendReview .sendReviewExitImgs .exitReviewImg {
+    position: absolute;
+    top: 6;
+    right: 5;
+}
+
+
+.sendReview .email {
+    display: block;
+    margin-top: -30px;
+    text-align: center;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .sendReview .email {
+        padding-top: 75px;
+    }
+}
+
+.sendReview .email input {
+    width: 835px;
+    height: 67px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 10px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .sendReview .email input {
+        width: 309px;
+        height: 73px;
+    }
+}
+
+.sendReview .email input::placeholder {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 38px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sendReview .reviewText {
+    text-align: center;
+    margin-left: 0;
+}
+
+.sendReview .reviewText input {
+    width: 835px;
+    height: 131px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 10px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top: 35px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .sendReview .reviewText input {
+        width: 309px;
+        height: 166px;
+    }
+}
+
+.sendReview .reviewText input::placeholder {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 38px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sendReview .reviewButton {
+    margin-top: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sendReview .reviewButton button {
+    width: 345px;
+    height: 80px;
+    background: linear-gradient(180deg, #00FFF0 -46.15%, #469EC4 65.15%, #0082BA 169.71%, #263A43 169.71%);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .sendReview .reviewButton button {
+        width: 309px;
+        height: 72px;
+    }
+}
+
+.sendReview .reviewButton button p {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: #FFFFFF;
+    margin-top: 13px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .sendReview .reviewButton button p {
+        font-size: 33px;
+        line-height: 42px;
+        margin-top: 14px;
+    }
+}
+
+
+.thxForReviewp {
+    display: none;
+    width: 925px;
+    height: 604px;
+    position: fixed;
+    top: 10%;
+    left: 18%;
+    border-radius: 10px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .thxForReviewp {
+        width: 327px;
+        height: 604px;
+        top: -320px;
+        left: 4px;
+        position: relative;
+    }
+}
+
+.thxForReviewp p {
+    width: 600px;
+    margin-left: 150px;
+    margin-top: 150px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 70px;
+    text-align: center;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .thxForReviewp p {
+        position: absolute;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 45px;
+        padding-top: 50px;
+        align-items: center;
+        margin-left: 45px;
+        width: 250px;
+    }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.cooperationTitle {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 70px;
+    color: #fff;
+    margin-left: 145px;
+    margin-top: 320px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .cooperationTitle {
+        width: 350px;
+        margin-left: 70px;
+        font-size: 30px;
+        line-height: 38px;
+        margin-top: 45px;
+    }
+}
+
+.cooperationHLine {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .cooperationHLine {
+        display: block;
+        width: 194px;
+        height: 2px;
+        background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
+        margin-left: 70px;
+        margin-top: -20px;
+    }
+}

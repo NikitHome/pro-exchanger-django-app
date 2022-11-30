@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.exchanger {
+    display: inline-flex;
+    margin-left: 185px;
+    margin-top: 150px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger {
+        display: block;
+        min-width: 350px;
+        max-width: 480px;
+        margin-left: 5;
+        margin-top: 90px;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .leftBlock p {
+    font-family: 'Mont-Regular';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 58px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .leftBlock p {
+        font-size: 27px;
+        line-height: 35px;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .leftBlock .walletChange1 {
+    background: rgba(0, 255, 240, 0.5);
+    border-radius: 5px;
+    width: 453px;
+    height: 73px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 35px;
+    margin-top: 0px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .leftBlock .walletChange1 {
+        width: 327px;
+        height: 55px;
+        font-size: 20px;
+        line-height: 26px;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .leftBlock .walletChange1 .walletChangeBg {
+    padding-top: 18px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .leftBlock .walletChange1 .walletChangeBg {
+        padding-top: 16px;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .leftBlock .walletChange1 .walletChangeBg a {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.exchanger .centerBlock {
+    margin-top: 185px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .centerBlock {
+        margin-top: -16;
+        margin-left: 135px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .centerBlock .desktopCenterBlock {
+    display: block;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .centerBlock .desktopCenterBlock {
+        display: none;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .centerBlock .mobileCenterBlock {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .centerBlock .mobileCenterBlock {
+        display: block;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .rightBlock p {
+    font-family: 'Mont-Regular';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 58px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .rightBlock P {
+        font-size: 27px;
+        line-height: 35px;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .rightBlock .walletChange2 {
+    background: rgba(0, 255, 240, 0.5);
+    border-radius: 5px;
+    width: 453px;
+    height: 73px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 35px;
+    margin-top: 0px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .rightBlock .walletChange2 {
+        width: 327px;
+        height: 55px;
+        font-size: 20px;
+        line-height: 26px;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .rightBlock .walletChange2 .walletChangeBg {
+    padding-top: 18px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .exchanger .rightBlock .walletChange2 .walletChangeBg {
+        padding-top: 16px;
+        box-sizing: border-box;
+    }
+}
+
+.exchanger .rightBlock .walletChange2 .walletChangeBg a {
+    margin-left: 20px;
+    cursor: pointer;
+}

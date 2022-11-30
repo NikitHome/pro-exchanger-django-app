@@ -6,9 +6,6 @@ def index(request):
 def contacts(request): 
     return render(request, 'exchanger/contacts.html')
 
-def FAQ(request): 
-    return render(request, 'exchanger/FAQ.html')
-
 def partners(request): 
     return render(request, 'exchanger/partners.html')
 

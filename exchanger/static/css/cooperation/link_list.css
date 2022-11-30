@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.linkList {
+    margin-left: 145px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList {
+        margin-left: -50px;
+    }
+}
+
+.linkList ul {
+    display: inline-flex;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList ul {
+        display: block;
+    }
+}
+
+.linkList ul li {
+    list-style: none;
+    margin-right: 70px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList ul li {
+        margin-left: 0px;
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList ul li img {
+        margin-left: 130px;
+    }
+}
+
+.linkList .colorLinkText {
+    color: rgba(0, 255, 240, 1);
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 34px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList .colorLinkText {
+        font-size: 23px;
+        line-height: 34px;
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList .colorLinkText1 {
+        margin-left: 48px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList .colorLinkText2 {
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList .colorLinkText3 {
+        margin-left: 80px;
+    }
+}
+
+.linkList .linkText {
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    margin-top: -15;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList .linkText {
+        font-size: 22px;
+        line-height: 25px;
+        width: 350px;
+        text-align: center;
+        display: none;
+    }
+}
+
+.linkList .linkTextMobile {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList .linkTextMobile {
+        color: #fff;
+        font-family: 'Mont-Regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        margin-left: 8px;
+        width: 350px;
+        display: block;
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList .linkTextMobile2 {
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .linkList .linkTextMobile3 {
+        margin-left: 11px;
+    }
+}

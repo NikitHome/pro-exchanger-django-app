@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.navbar {
+    display: inline-flex;
+    margin: 20px 10% 0 10%;
+    width: 80%;
+}
+
+.navbar .headerLogoImg {
+    height: 60px;
+    cursor: pointer;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .navbar .headerLogoImg {
+        display: none;
+    }
+}
+
+.navbarButtons {
+    display: inline-flex;
+}
+
+.navbarButtons ul li {
+    list-style: none;
+}
+
+.navbarButtons ul li a {
+    color: #fff;
+}
+
+.navbarButtons ul li p {
+    color: #fff;
+}
+
+.navbarItems {
+    display: inline-flex;
+    padding-left: 50px;
+    margin-top: 12px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .navbarItems {
+        display: none;
+    }
+}
+
+.navbarItems li a {
+    text-decoration: none;
+}
+
+.menuMButton {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .menuMButton {
+        display: block;
+        background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
+        border-radius: 6px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        margin-left: -115px;
+        margin-top: -16;
+    }
+    .hMsLine {
+        margin-left: 2px;
+    }
+    .hMLine1 {
+        width: 33px;
+        height: 4px;
+        background-color: #fff;
+        border: none;
+        margin-bottom: 8px;
+    }
+    .hMLine2 {
+        width: 33px;
+        height: 4px;
+        background-color: #fff;
+        border: none;
+        margin-bottom: 8px;
+    }
+    .hMLine3 {
+        width: 20px;
+        height: 4px;
+        background-color: #fff;
+        border: none;
+    }
+}
+
+.navbarAuthItems {
+    display: inline-flex;
+    padding-left: 0;
+}
+
+.navbarItemText {
+    font-family: 'Mont-Regular';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.verticalLine {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 2px solid rgba(0, 255, 240, 1);
+    height: 26px;
+}
+
+.logo {
+    font-family: 'Flamenco', cursive;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    font-size: x-large;
+    margin-top: 13px;
+    margin-right: 150px;
+    padding-bottom: 0;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .logo {
+        display: none;
+    }
+}
+
+#languageSelect {
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: -8;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    #languageSelect {
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 90px;
+        margin-top: -40px;
+        margin-right: 8px;
+        padding-right: 0;
+    }
+}
+
+.languageSelect {
+    margin-left: -20px;
+    padding-right: 0;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .languageSelect {
+        margin-top: -6px;
+    }
+}
+
+.registerText {
+    margin-top: -9px;
+    margin-left: 0px;
+    font-family: 'Mont-Regular';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    width: 165px;
+    height: 38px;
+    border-radius: 6px;
+    background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
+    cursor: pointer;
+    border: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .registerText {
+        width: 108px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: -50px;
+    }
+}
+
+.registerText a {
+    text-decoration: none;
+}
+
+.loginText {
+    margin-left: 22;
+    margin-top: 2;
+    font-weight: 600;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .loginText {
+        font-size: 10px;
+        line-height: 13px;
+        margin-left: 2;
+        margin-top: 4;
+    }
+}
+
+.loginText a {
+    text-decoration: underline;
+}
+
+.isAuthTrue {
+    display: inline-flex;
+}
+
+.isAuthFalse {
+    margin-left: -20px;
+    margin-top: -2px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .isAuthFalse {
+        margin-top: -23px;
+        margin-left: -32px;
+    }
+}

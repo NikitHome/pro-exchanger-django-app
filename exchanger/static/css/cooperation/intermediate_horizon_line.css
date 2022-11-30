@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.intermediateHorizontalLine {
+    width: 928px;
+    height: 7px;
+    margin-left: 17%;
+    margin-top: 60px;
+    background-color: rgba(0, 255, 240, 1);
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .intermediateHorizontalLine {
+        width: 239px;
+        margin-left: 53px;
+    }
+}

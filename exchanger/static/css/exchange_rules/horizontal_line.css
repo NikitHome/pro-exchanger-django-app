@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.hLine {
+    margin-top: 80px;
+    width: 100%;
+    height: 6px;
+    background-color: rgba(0, 178, 255, 0.51);
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .hLine {
+        width: 393px;
+        margin-left: -8;
+        padding-left: 0;
+    }
+}

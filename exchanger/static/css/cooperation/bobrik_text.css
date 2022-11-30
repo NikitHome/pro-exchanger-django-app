@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.bobrikText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    margin-left: 145px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .bobrikText {
+        display: none;
+    }
+}
+
+.bobrikTextMobile {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .bobrikTextMobile {
+        display: block;
+        font-size: 17px;
+        line-height: 22px;
+        font-weight: 600;
+        font-family: 'Mont-Regular';
+        color: #fff;
+        text-align: center;
+        font-style: normal;
+        margin-left: 0;
+        width: 350px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}

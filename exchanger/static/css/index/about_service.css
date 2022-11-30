@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.aboutService {
+    display: block;
+    margin-top: 190px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService {
+        width: 350px;
+    }
+}
+
+.aboutService .title {
+    text-align: center;
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 70px;
+    margin-bottom: 60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .title {
+        display: none;
+    }
+}
+
+.aboutService .mobileTitle {
+    display: none;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .mobileTitle {
+        display: block;
+        margin-top: -90px;
+        margin-left: -20px;
+    }
+}
+
+
+.aboutService .aboutText {
+    margin-left: 150px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutText {
+        margin-left: 0px;
+        width: 330px;
+    }
+}
+
+.aboutService .aboutText .slimText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    color: #fff;
+    margin-top: 40px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutText .slimText {
+        font-size: 15px;
+        line-height: 19px;
+        margin-left: 17px;
+    }
+}
+
+.aboutService .aboutText .boldText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: 70px;
+    color: #fff;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutText .boldText {
+        display: none;
+        font-size: 25px;
+        line-height: 32px;
+        width: 340px;
+        margin-left: 17px;
+    }
+}
+
+.aboutService .aboutText .boldTextMobile {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 700;
+    display: none;
+    font-size: 25px;
+    line-height: 32px;
+    width: 340px;
+    margin-left: 17px;
+    color: #fff;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutText .boldTextMobile {
+        display: block;
+    } 
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .listText {
+        margin-top: 30px;
+        margin-left: -8px;
+    }
+}
+
+.aboutService .aboutList .aboutListTop {
+    display: inline-flex;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    color: #fff;
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 0;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListTop {
+        display: block;
+        margin-left: -22px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+
+.aboutService .aboutList .aboutListTop .listText2 {
+    margin-left: 60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListTop .listText2 {
+        margin-left: 0;
+    }
+}
+
+.aboutService .aboutList .aboutListTop .listText3 {
+    margin-left: 60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListTop .listText3 {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListBottom .listText1 {
+        display: none;
+    }
+}
+
+.aboutService .aboutList .aboutListBottom .listText1Mobile {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListBottom .listText1Mobile {
+        display: inline-flex;
+    }
+}
+
+.aboutService .aboutList .aboutListBottom .listText2 {
+    margin-left: 52px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListBottom .listText2 {
+        margin-left: 0;
+        display: none;
+    }
+}
+
+.aboutService .aboutList .aboutListBottom .listText2Mobile {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListBottom .listText2Mobile {
+        display: inline-flex;
+    }
+}
+
+.aboutService .aboutList .aboutListBottom .listText3 {
+    margin-left: 82px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListBottom .listText3 {
+        margin-left: 0;
+        display: none;
+    }
+}
+
+.aboutService .aboutList .aboutListBottom .listText3Mobile {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListBottom .listText3Mobile {
+        display: inline-flex;
+    }
+}
+
+.aboutService .aboutList .aboutListTop li {
+    display: inline-flex;
+}
+
+.aboutService .aboutList .aboutListBottom {
+    display: inline-flex;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    color: #fff;
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 0;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutService .aboutList .aboutListBottom {
+        display: block;
+        margin-left: -22px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+
+.aboutService .aboutList .aboutListBottom li {
+    display: inline-flex;
+}
+
+.aboutList .aboutListTop .vLine {
+    margin-top: 26px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 10px solid rgba(0, 255, 240, 1);
+    height: 93px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutList .aboutListTop .vLine {
+        width: 8px;
+        height: 74.35px;
+        margin-left: 0;
+    }
+}
+
+.aboutList .aboutListBottom .vLine {
+    margin-top: 26px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 10px solid rgba(0, 255, 240, 1);
+    height: 60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutList .aboutListBottom .vLine {
+        width: 8px;
+        height: 74.35px;
+        margin-left: 0;
+    }
+}
+
+.bottomHorizontalLine {
+    margin-top: 0px;
+    width: 100%;
+    height: 6px;
+    background-color: rgba(0, 178, 255, 0.51);
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .bottomHorizontalLine {
+        width: 390px;
+        margin-left: -8;
+        padding-left: 0;
+    }
+}

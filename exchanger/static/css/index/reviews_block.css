@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.reviewsBlock {
+    margin-top: 60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock {
+        width: 350px;
+    }
+}
+
+.reviewsBlock .title {
+    text-align: center;
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 70px;
+    margin-top: 60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .title {
+        display: none;
+    }
+}
+
+.reviewsBlock .titleMobile {
+    text-align: center;
+    display: none;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    color: #fff;
+    margin-left: -10px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .titleMobile {
+        display: block;
+    }
+}
+
+.reviewsBlock .reviews {
+    margin-left: 150px;
+    margin-top: 35px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .reviews {
+        width: 350px;
+        margin-left: 0;
+    }
+}
+
+.reviewsBlock .reviews ul {
+    list-style: none;
+    display: inline-flex;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .reviews ul {
+        display: block;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .reviews .review2of2Block {
+        display: none;
+    }
+}
+
+.reviewsBlock .reviews .review {
+    margin-left: 60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .reviews .review {
+        margin-left: -6px;
+        margin-top: 45px;
+    }
+}
+
+.reviewsBlock .reviews .reviewContent {
+    border: 3px solid #00FFF0;
+    border-radius: 29px;
+    width: 263px;
+    height: 175px;
+}
+
+.reviewsBlock .reviews .reviewContent .name {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.reviewsBlock .reviews .reviewContent .date {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.56);
+    margin-left: 20px;
+    margin-top: -18;
+}
+
+.reviewsBlock .reviews .reviewContent .text {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 19px;
+}
+
+.reviewsBlock .reviews .ellipses {
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+
+.reviewsBlock .reviews .ellipses img {
+    margin-left: 7px;
+}
+
+.reviewsBlock .reviewsButton .addReview {
+    background: linear-gradient(180deg, #00FFF0 -46.15%, #469EC4 65.15%, #0082BA 169.71%, #263A43 169.71%);
+    border-radius: 20px;
+    width: 395px;
+    height: 80px;
+    margin-left: 520px;
+    margin-top: 50px;
+    border: none;
+    cursor: pointer;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .reviewsButton .addReview {
+        width: 307px;
+        height: 62px;
+        margin-left: 16px;
+        margin-top: 35px;
+    }
+}
+
+.reviewsBlock .reviewsButton .addReview p {
+    text-align: center;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 51px;
+    color: #fff;
+    margin-top: 14px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .reviewsBlock .reviewsButton .addReview p {
+        font-size: 29px;
+        line-height: 37px;
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.aboutOurService {
+    display: inline-flex;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutOurService {
+        min-width: 350px;
+        max-width: 480px;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+.aboutOurService .aboutOurServiceHLine {
+    display: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutOurService .aboutOurServiceHLine {
+        display: block;
+        width: 194px;
+        height: 2px;
+        background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
+        margin-left: 75px;
+        margin-top: -20px;
+        box-sizing: border-box;
+    }
+}
+
+.aboutOurService .leftText {
+    font-family: 'Mont-Regular';
+    font-weight: 600;
+    font-size: 60px;
+    color: #fff;
+    margin-left: 240px;
+    margin-top: 145px;
+}
+@media (min-width: 350px) and (max-width:480px) {
+    .aboutOurService .leftText {
+        font-size: 25px;
+        line-height: 32px;
+        margin-left: -135px;
+        margin-top: 70px;
+        box-sizing: border-box;
+    }
+}
+
+.aboutOurService .rightText {
+    font-family: 'Mont-Regular';
+    font-weight: 600;
+    font-size: 33px;
+    color: #fff;
+    margin-top: 165px;
+    margin-left: 70px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .aboutOurService .rightText {
+        font-size: 17px;
+        line-height: 22px;
+        margin-top: 18px;
+        margin-left: -130px;
+        box-sizing: border-box;
+    }
+}

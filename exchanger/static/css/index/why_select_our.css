@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.whyOurBlock {
+    text-align: center;
+    margin-top: 120px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock {
+        width: 350px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .title {
+        width: 285px;
+    }
+}
+
+.whyOurBlock .title p {
+    font-family: 'Mont-Regular';
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 70px;
+    color: #fff;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .title p {
+        font-size: 30px;
+        line-height: 38px;
+        margin-top: -80px;
+        margin-left: 55px;
+    }
+}
+
+.whyOurBlock .list {
+    display: block;
+    margin-left: -60px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list {
+        margin-left: -100px;
+    }
+}
+
+.whyOurBlock .list ul {
+    display: inline-flex;
+    list-style: none;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul {
+        display: block;
+    }
+}
+
+.whyOurBlock .list ul li .colorText {
+    list-style: none;
+    color: rgba(0, 255, 240, 1);
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 32px;
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-top: 15;
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li img {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .listImg1 {
+        margin-left: 50px;
+    }
+}
+
+.whyOurBlock .list ul li .colorText1 {
+    margin-top: 38px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .colorText1 {
+        margin-left: 90px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .listImg2 {
+        margin-left: 50px;
+    }
+}
+
+.whyOurBlock .list ul li .colorText2 {
+    margin-top: 38px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .colorText2 {
+        margin-left: 94px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .listImg3 {
+        margin-left: 52px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .colorText3 {
+        margin-left: 90px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .listImg4 {
+        margin-left: 45px;
+    }
+}
+
+.whyOurBlock .list ul li .colorText4 {
+    margin-top: 32px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .colorText4 {
+        margin-left: 95px;
+    }
+}
+
+.whyOurBlock .list ul li .text {
+    list-style: none;
+    color: #fff;
+    margin-left: 13px;
+    margin-right: 13px;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text {
+        margin-top: -15;
+    }
+}
+
+.whyOurBlock .list ul li .text1 {
+    margin-left: 30px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text1 {
+        margin-left: 65px;
+    }
+}
+
+.whyOurBlock .list ul li .text2 {
+    margin-left: 30px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text2 {
+        margin-left: 70px;
+    }
+}
+
+.whyOurBlock .list ul li .text3 {
+    margin-left: 32px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text3 {
+        margin-left: 65px;
+    }
+}
+
+.whyOurBlock .list ul li .text4 {
+    margin-left: 34px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .whyOurBlock .list ul li .text4 {
+        margin-left: 70px;
+    }
+}

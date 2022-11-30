@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.desktopFooter {
+    margin: 0 10% 0 10%;
+    bottom: 0;
+    width: 80%;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .desktopFooter {
+        display: none;
+    }
+}
+
+.desktopFooter .footerTop {
+    display: inline-flex;
+    margin-top: 15px;
+    margin-left: -20px;
+}
+
+.desktopFooter .footerTop .footerNavbarButtons .footerLogoImg {
+    height: 40px;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.desktopFooter .footerBottom .rightsText {
+    color: #fff;
+    margin-top: -20px;
+    padding-bottom: 16px;
+    margin-left: 25px;
+}
+
+.desktopFooter .footerNavbarButtons {
+    display: inline-flex;
+}
+
+.desktopFooter .footerNavbarButtons ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.desktopFooter .footerNavbarButtons ul {
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.desktopFooter .footerNavbarItems {
+    display: inline-flex;
+}
+
+.desktopFooter .footerNavbarItems li {
+    list-style: none;
+}
+
+.desktopFooter .footerVerticalLine {
+    margin-top: -3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 2px solid rgba(0, 255, 240, 1);
+    height: 26px;
+}
+
+.desktopFooter .telegram {
+    display: inline-flex;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.desktopFooter .telegramText {
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-weight: normal;
+}
+
+.desktopFooter .telegramImage {
+    margin-top: 18px;
+    margin-right: 15px;
+}
+
+.desktopFooter .telegramLink {
+    color: rgba(0, 255, 240, 1);
+    font-family: 'Mont-Regular';
+    font-weight: normal;
+    margin-top: -17px;
+}
+
+.desktopFooter .footerLogo {
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+    font-weight: normal;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 45px;
+    width: 64px;
+    font-size: 30px;
+}
+
+.desktopFooter .footerNavbarItemText {
+    font-family: 'Mont-Regular';
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.mobileFooter {
+    display: none;
+    width: 350px;
+}
+@media (min-width: 350px) and (max-width: 480px) {
+    .mobileFooter {
+        display: block;
+    }
+}
+
+.mobileFooter .mobileFooterTop {
+    display: inline-flex;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Left {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Left img {
+    height: 40px;
+    width: auto;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Left p {
+    font-family: 'Mont-Regular';
+    font-weight: normal;
+    color: #fff;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    margin-top: 6px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right {
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right .mobileOurTelegram {
+    font-family: 'Mont-Regular';
+    font-weight: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    line-height: 23px;
+    margin-left: 6px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right .mobileTelegram {
+    display: inline-flex;
+    margin-top: -15px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right .mobileTelegram img {
+    width: auto;
+    height: 25px;
+}
+
+.mobileFooter .mobileFooterTop .mobileFooterTop-Right .mobileTelegram p {
+    margin-left: 20px;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(0, 255, 240, 1);
+    margin-left: 5;
+    margin-top: 0;
+}
+
+.mobileFooter .mobileFooterBottom {
+    display: inline-flex;
+    margin-left: -30px;
+}
+
+.mobileFooter .mobileFooterBottom .mobileFooterBottom-Left ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.mobileFooter .mobileFooterBottom .mobileFooterBottom-Left ul li a {
+    text-decoration: none;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.mobileFooter .mobileFooterBottom .mobileFooterBottom-Right ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.mobileFooter .mobileFooterBottom .mobileFooterBottom-Right ul li a {
+    text-decoration: none;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+}
