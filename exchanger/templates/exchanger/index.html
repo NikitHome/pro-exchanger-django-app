@@ -18,6 +18,7 @@
 {% endblock %}
 
 {% block additional_styles %}
+    {% comment %} задний фон {% endcomment %}
     <style>
         body {
             background-image: url('{% static "images/index/background_main.png"%}');
@@ -51,7 +52,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.trunk.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
 {% endblock %}
-    <div class="aboutOurService">
+    <div id="aboutOurService" class="aboutOurService">
         <p class="leftText">
             Регистрация<br>
             не требуется
@@ -64,7 +65,7 @@
         </p>
     </div>
 
-    <div class="exchanger">
+    <div id="exchanger" class="exchanger">
         <div id="leftBlock" class="leftBlock">
             <p class="leftBlockText">
                 Отдаете
@@ -171,6 +172,7 @@
                 </ul>
             </div>
             <script>
+                // левый выпадающий список
                 const optionMenu = document.querySelector('.select-menu');
                 const selectBtn = optionMenu.querySelector('.select-btn');
                 const options = optionMenu.querySelectorAll('.option');
@@ -188,6 +190,19 @@
             </script>
         </div>
 
+        <p id="leftBlockTextAfter" class="leftBlockTextAfter">
+            Отдаете
+        </p>
+        <div id="walletChange1After" class="walletChange1After">
+            <div class="walletChangeBgAfter">
+                <a class="coins1After">
+                    Коины
+                </a>
+                <a class="wallets1After">
+                    Кошельки
+                </a>
+            </div>
+        </div>
         <div id="coinValue1" class="coinValue1">
             <img id="selectImg" class="icon selectImg" src="#" alt="coinimg">
             <span id="selectCoin" class="selectCoin"></span>
@@ -197,6 +212,7 @@
         </div>
         <script>
             $(document).ready(function() {
+                // ссылки на лого монет
                 const srcPicBTC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png';
                 const srcPicETH = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png';
                 const srcPicUSDT = 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png';
@@ -208,80 +224,110 @@
                 const srcPicLUNC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png';
                 const srcPicCHZ = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png';
 
+                // функция нажатия на монету bitcoin
                 $('#bitcoin').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicBTC;
                     document.getElementById('selectCoin').innerText = 'BITCOIN';
                     document.getElementById('miniCoinText').innerText = 'BTC';
                 });
 
+                // функция нажатия на монету ethereum
                 $('#ethereum').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicETH;
                     document.getElementById('selectCoin').innerText = 'Ethereum';
                     document.getElementById('miniCoinText').innerText = 'ETH';
                 });
 
+                // функция нажатия на монету tether
                 $('#tether').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicUSDT;
                     document.getElementById('selectCoin').innerText = 'Tether';
                     document.getElementById('miniCoinText').innerText = 'USDT';
                 });
 
+                // функция нажатия на монету cardano
                 $('#cardano').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicADA;
                     document.getElementById('selectCoin').innerText = 'Cardano';
                     document.getElementById('miniCoinText').innerText = 'ADA';
                 });
 
+                // функция нажатия на монету dogecoin
                 $('#dogecoin').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicDOGE;
                     document.getElementById('selectCoin').innerText = 'Dogecoin';
                     document.getElementById('miniCoinText').innerText = 'DOGE';
                 });
 
+                // функция нажатия на монету tron
                 $('#tron').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicTRX;
                     document.getElementById('selectCoin').innerText = 'TRON';
                     document.getElementById('miniCoinText').innerText = 'TRX';
                 });
 
+                // функция нажатия на монету shibainu
                 $('#shibainu').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicSHIB;
                     document.getElementById('selectCoin').innerText = 'Shiba Inu';
                     document.getElementById('miniCoinText').innerText = 'SHIB';
                 });
 
+                // функция нажатия на монету litecoin
                 $('#litecoin').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicLTC;
                     document.getElementById('selectCoin').innerText = 'Litecoin';
                     document.getElementById('miniCoinText').innerText = 'LTC';
                 });
 
+                // функция нажатия на монету terraclassic
                 $('#terraclassic').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicLUNC;
                     document.getElementById('selectCoin').innerText = 'Terra Classic';
                     document.getElementById('miniCoinText').innerText = 'LUNK';
                 });
 
+                // функция нажатия на монету chiliz
                 $('#chiliz').on('click', () => {
                     document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('leftBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange1After').style.display = 'block';
                     document.getElementById('coinValue1').style.display = 'inline-flex';
                     document.getElementById('selectImg').src = srcPicCHZ;
                     document.getElementById('selectCoin').innerText = 'Chiliz';
@@ -402,6 +448,7 @@
                 </ul>
             </div>
             <script>
+                // правый выпадающий список
                 const optionMenu1 = document.querySelector('.select-menu1');
                 const selectBtn1 = optionMenu1.querySelector('.select-btn1');
                 const options1 = optionMenu1.querySelectorAll('.option1');
@@ -419,6 +466,19 @@
             </script>
         </div>
 
+        <p id="rightBlockTextAfter" class="rightBlockTextAfter">
+            Получите
+        </p>
+        <div id="walletChange2After" class="walletChange2After">
+            <div class="walletChangeBgAfter">
+                <a class="coins2After">
+                    Коины
+                </a>
+                <a class="wallets2After">
+                    Кошельки
+                </a>
+            </div>
+        </div>
         <div id="coinValue2" class="coinValue2">
             <img id="selectImg2" class="icon selectImg2" src="#" alt="coinimg">
             <span id="selectCoin2" class="selectCoin2"></span>
@@ -428,6 +488,7 @@
         </div>
         <script>
             $(document).ready(function() {
+                // ссылки на лого монет
                 const srcPicBTC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png';
                 const srcPicETH = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png';
                 const srcPicUSDT = 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png';
@@ -439,78 +500,115 @@
                 const srcPicLUNC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png';
                 const srcPicCHZ = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png';
 
+                // функция нажатия на монету bitcoin2
                 $('#bitcoin2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicBTC;
                     document.getElementById('selectCoin2').innerText = 'BITCOIN';
                     document.getElementById('miniCoinText2').innerText = 'BTC';
                 });
+
+                // функция нажатия на монету ethereum2
                 $('#ethereum2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicETH;
                     document.getElementById('selectCoin2').innerText = 'Ethereum';
                     document.getElementById('miniCoinText2').innerText = 'ETH';
                 });
+
+                // функция нажатия на монету tether2
                 $('#tether2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicUSDT;
                     document.getElementById('selectCoin2').innerText = 'Tether';
                     document.getElementById('miniCoinText2').innerText = 'USDT';
                 });
+
+                // функция нажатия на монету cardano2
                 $('#cardano2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicADA;
                     document.getElementById('selectCoin2').innerText = 'Cardano';
                     document.getElementById('miniCoinText2').innerText = 'ADA';
                 });
+
+                // функция нажатия на монету dogecoin2
                 $('#dogecoin2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicDOGE;
                     document.getElementById('selectCoin2').innerText = 'Dogecoin';
                     document.getElementById('miniCoinText2').innerText = 'DOGE';
                 });
+
+                // функция нажатия на монету tron2
                 $('#tron2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicTRX;
                     document.getElementById('selectCoin2').innerText = 'TRON';
                     document.getElementById('miniCoinText2').innerText = 'TRX';
                 });
+
+                // функция нажатия на монету shibainu2
                 $('#shibainu2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicSHIB;
                     document.getElementById('selectCoin2').innerText = 'Shiba Inu';
                     document.getElementById('miniCoinText2').innerText = 'SHIB';
                 });
+
+                // функция нажатия на монету litecoin2
                 $('#litecoin2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicLTC;
                     document.getElementById('selectCoin2').innerText = 'Litecoin';
                     document.getElementById('miniCoinText2').innerText = 'LTC';
                 });
+
+                // функция нажатия на монету terraclassic2
                 $('#terraclassic2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicLUNC;
                     document.getElementById('selectCoin2').innerText = 'Terra Classic';
                     document.getElementById('miniCoinText2').innerText = 'LUNK';
                 });
+
+                // функция нажатия на монету chiliz2
                 $('#chiliz2').on('click', () => {
                     document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('rightBlockTextAfter').style.display = 'block';
+                    document.getElementById('walletChange2After').style.display = 'block';
                     document.getElementById('coinValue2').style.display = 'inline-flex';
                     document.getElementById('selectImg2').src = srcPicCHZ;
                     document.getElementById('selectCoin2').innerText = 'Chiliz';
                     document.getElementById('miniCoinText2').innerText = 'CHZ';
                 });
-
-                
             })
         </script>
     </div>
@@ -553,6 +651,7 @@
         </div>
 
         <script>
+            // функция скрывает межблоковые элементы и показывает форму
             $(document).ready(function() {
                 spanValue1 = $('#selectCoin1').text();
                 spanValue2 = $('#selectCoin2').text();
@@ -566,6 +665,7 @@
         </script>
 
         <script>
+            // функция дизейблит кнопку
             $(function() {
                 $("#intermediateBlock1Click").on('change input paste', 'input', function(e) {
                     $('#goPay').prop('disabled', !$("#walletNumInput").val() || !$('#emailInput').val() || !$('#checkboxInput').val());
@@ -575,6 +675,7 @@
 
         <script>
             $(document).ready(function() {
+                // функция получения курса монеты bitcoin
                 function bitcoin() {
                     $.ajax({
                         async: false,
@@ -587,9 +688,8 @@
                     });
                     return bitcoinVal;
                 }
-                bitcoin();
-                console.log(bitcoinVal);
 
+                // функция получения курса монеты ethereum
                 function ethereum() {
                     $.ajax({
                         async: false,
@@ -602,9 +702,8 @@
                     });
                     return ethereumVal;
                 }
-                ethereum();
-                console.log(ethereumVal);
 
+                // функция получения курса монеты tether
                 function tether() {
                     $.ajax({
                         async: false,
@@ -617,9 +716,8 @@
                     });
                     return tetherVal;
                 }
-                tether();
-                console.log(tetherVal);
 
+                // функция получения курса монеты cardano
                 function cardano() {
                     $.ajax({
                         async: false,
@@ -632,9 +730,8 @@
                     });
                     return cardanoVal;
                 }
-                cardano();
-                console.log(cardanoVal);
 
+                // функция получения курса монеты dogecoin
                 function dogecoin() {
                     $.ajax({
                         async: false,
@@ -647,9 +744,8 @@
                     });
                     return dogecoinVal;
                 }
-                dogecoin();
-                console.log(dogecoinVal);
 
+                // функция получения курса монеты tron
                 function tron() {
                     $.ajax({
                         async: false,
@@ -662,9 +758,8 @@
                     });
                     return tronVal;
                 }
-                tron();
-                console.log(tronVal);
 
+                // функция получения курса монеты shibainu
                 function shibainu() {
                     $.ajax({
                         async: false,
@@ -677,9 +772,8 @@
                     });
                     return shibainuVal;
                 }
-                shibainu();
-                console.log(shibainuVal);
 
+                // функция получения курса монеты litecoin
                 function litecoin() {
                     $.ajax({
                         async: false,
@@ -692,9 +786,8 @@
                     });
                     return litecoinVal;
                 }
-                litecoin();
-                console.log(litecoinVal);
 
+                // функция получения курса монеты terraclassic
                 function terraclassic() {
                     $.ajax({
                         async: false,
@@ -707,9 +800,8 @@
                     });
                     return terraclassicVal;
                 }
-                terraclassic();
-                console.log(terraclassicVal);
 
+                // функция получения курса монеты chiliz
                 function chiliz() {
                     $.ajax({
                         async: false,
@@ -722,9 +814,36 @@
                     });
                     return chilizVal;
                 }
-                chiliz();
-                console.log(chilizVal);
 
+                function giveCoins() {
+                    bitcoin();
+                    ethereum();
+                    tether();
+                    cardano();
+                    dogecoin();
+                    tron();
+                    shibainu();
+                    litecoin();
+                    terraclassic();
+                    chiliz();
+                }
+                //giveCoins();
+
+                function showCoins() {
+                    console.log(bitcoinVal);
+                    console.log(ethereumVal);
+                    console.log(tetherVal);
+                    console.log(cardanoVal);
+                    console.log(dogecoinVal);
+                    console.log(tronVal);
+                    console.log(shibainuVal);
+                    console.log(litecoinVal);
+                    console.log(terraclassicVal);
+                    console.log(chilizVal);
+                }
+                //showCoins();
+
+                // сохранение курса монет
                 const bitcoinCourse = bitcoinVal;
                 const ethereumCourse = ethereumVal;
                 const tetherCourse = tetherVal;
@@ -736,6 +855,7 @@
                 const terraclassicCourse = terraclassicVal;
                 const chilizCourse = chilizVal;
 
+                // сохранение названий монет
                 const bitcoinName = 'BITCOIN BTC';
                 const ethereumName = 'Ethereum ETH';
                 const tetherName = 'Tether USDT';
@@ -747,341 +867,704 @@
                 const terraclassicName = 'Terra Classic LUNC';
                 const chilizName = 'Chiliz CHZ';
 
+                // калькулятор левой части
                 $('#selectInput').on('input', function () {
                     if ($('#dropdownSelectCoin').text() == bitcoinName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('bitcoinName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('bitcoinName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('bitcoinName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / ethereumCourse))
+                            console.log('bitcoinName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('bitcoinName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / tetherCourse))
+                            console.log('bitcoinName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('bitcoinName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / cardanoCourse))
+                            console.log('bitcoinName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('bitcoinName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('bitcoinName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('bitcoinName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / tronCourse))
+                            console.log('bitcoinName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('bitcoinName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / shibainuCourse))
+                            console.log('bitcoinName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('bitcoinName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / litecoinCourse))
+                            console.log('bitcoinName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('bitcoinName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('bitcoinName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('bitcoinName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / chilizCourse))
+                            console.log('bitcoinName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == ethereumName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('ethereumName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('ethereumName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('ethereumName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('ethereumName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('ethereumName - tetherName')
-                            $('#selectInput2').val($('#input1').val() * ethereumCourse * Math.fround(1 / tetherCourse))
+                            console.log('ethereumName - tetherName');
+                            $('#selectInput2').val($('#input1').val() * ethereumCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('ethereumName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / cardanoCourse))
+                            console.log('ethereumName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('ethereumName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('ethereumName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('ethereumName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / tronCourse))
+                            console.log('ethereumName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('ethereumName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / shibainuCourse))
+                            console.log('ethereumName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('ethereumName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / litecoinCourse))
+                            console.log('ethereumName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('ethereumName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('ethereumName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('ethereumName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / chilizCourse))
+                            console.log('ethereumName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == tetherName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('tetherName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('tetherName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('tetherName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / ethereumCourse))
+                            console.log('tetherName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('tetherName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('tetherName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('tetherName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / cardanoCourse))
+                            console.log('tetherName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('tetherName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('tetherName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('tetherName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / tronCourse))
+                            console.log('tetherName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('tetherName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / shibainuCourse))
+                            console.log('tetherName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('tetherName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / litecoinCourse))
+                            console.log('tetherName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('tetherName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('tetherName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('tetherName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / chilizCourse))
+                            console.log('tetherName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == cardanoName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('cardanoName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('cardanoName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('cardanoName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / ethereumCourse))
+                            console.log('cardanoName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('cardanoName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / tetherCourse))
+                            console.log('cardanoName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('cardanoName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('cardanoName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('cardanoName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('cardanoName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('cardanoName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / tronCourse))
+                            console.log('cardanoName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('cardanoName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / shibainuCourse))
+                            console.log('cardanoName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('cardanoName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / litecoinCourse))
+                            console.log('cardanoName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('cardanoName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('cardanoName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('cardanoName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / chilizCourse))
+                            console.log('cardanoName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('dogecoinName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('dogecoinName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('dogecoinName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / ethereumCourse))
+                            console.log('dogecoinName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('dogecoinName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / tetherCourse))
+                            console.log('dogecoinName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('dogecoinName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / cardanoCourse))
+                            console.log('dogecoinName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('dogecoinName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('dogecoinName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('dogecoinName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / tronCourse))
+                            console.log('dogecoinName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('dogecoinName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / shibainuCourse))
+                            console.log('dogecoinName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('dogecoinName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / litecoinCourse))
+                            console.log('dogecoinName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('dogecoinName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('dogecoinName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('dogecoinName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / chilizCourse))
+                            console.log('dogecoinName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == tronName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('tronName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('tronName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('tronName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / ethereumCourse))
+                            console.log('tronName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('tronName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / tetherCourse))
+                            console.log('tronName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('tronName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / cardanoCourse))
+                            console.log('tronName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('tronName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('tronName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('tronName - tronName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('tronName - tronName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('tronName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / shibainuCourse))
+                            console.log('tronName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('tronName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / litecoinCourse))
+                            console.log('tronName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('tronName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('tronName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('tronName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / chilizCourse))
+                            console.log('tronName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == shibainuName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('shibainuName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('shibainuName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('shibainuName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / ethereumCourse))
+                            console.log('shibainuName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('shibainuName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / tetherCourse))
+                            console.log('shibainuName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('shibainuName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / cardanoCourse))
+                            console.log('shibainuName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('shibainuName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('shibainuName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('shibainuName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / tronCourse))
+                            console.log('shibainuName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('shibainuName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('shibainuName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('shibainuName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / litecoinCourse))
+                            console.log('shibainuName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('shibainuName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('shibainuName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('shibainuName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / chilizCourse))
+                            console.log('shibainuName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == litecoinName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('litecoinName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('litecoinName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('litecoinName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / ethereumCourse))
+                            console.log('litecoinName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('litecoinName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / tetherCourse))
+                            console.log('litecoinName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('litecoinName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / cardanoCourse))
+                            console.log('litecoinName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('litecoinName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('litecoinName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('litecoinName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / tronCourse))
+                            console.log('litecoinName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('litecoinName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / shibainuCourse))
+                            console.log('litecoinName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('litecoinName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('litecoinName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('litecoinName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('litecoinName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('litecoinName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / chilizCourse))
+                            console.log('litecoinName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('terraclassicName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('terraclassicName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('terraclassicName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / ethereumCourse))
+                            console.log('terraclassicName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('terraclassicName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / tetherCourse))
+                            console.log('terraclassicName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('terraclassicName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / cardanoCourse))
+                            console.log('terraclassicName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('terraclassicName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('terraclassicName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('terraclassicName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / tronCourse))
+                            console.log('terraclassicName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('terraclassicName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / shibainuCourse))
+                            console.log('terraclassicName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('terraclassicName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / litecoinCourse))
+                            console.log('terraclassicName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('terraclassicName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('terraclassicName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val());
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('terraclassicName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / chilizCourse))
+                            console.log('terraclassicName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / chilizCourse));
                         }
                     } else if ($('#dropdownSelectCoin').text() == chilizName) {
                         if ($('#dropdownSelectCoin2').text() == bitcoinName) {
-                            console.log('chilizName - bitcoinName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / bitcoinCourse))
+                            console.log('chilizName - bitcoinName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / bitcoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
-                            console.log('chilizName - ethereumName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / ethereumCourse))
+                            console.log('chilizName - ethereumName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / ethereumCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tetherName) {
-                            console.log('chilizName - tetherName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / tetherCourse))
+                            console.log('chilizName - tetherName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / tetherCourse));
                         } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
-                            console.log('chilizName - cardanoName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / cardanoCourse))
+                            console.log('chilizName - cardanoName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / cardanoCourse));
                         } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
-                            console.log('chilizName - dogecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / dogecoinCourse))
+                            console.log('chilizName - dogecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / dogecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == tronName) {
-                            console.log('chilizName - tronName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / tronCourse))
+                            console.log('chilizName - tronName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / tronCourse));
                         } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
-                            console.log('chilizName - shibainuName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / shibainuCourse))
+                            console.log('chilizName - shibainuName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / shibainuCourse));
                         } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
-                            console.log('chilizName - litecoinName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / litecoinCourse))
+                            console.log('chilizName - litecoinName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / litecoinCourse));
                         } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
-                            console.log('chilizName - terraclassicName')
-                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / terraclassicCourse))
+                            console.log('chilizName - terraclassicName');
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / terraclassicCourse));
                         } else if ($('#dropdownSelectCoin2').text() == chilizName) {
-                            console.log('chilizName - chilizName')
-                            $('#selectInput2').val($('#selectInput').val())
+                            console.log('chilizName - chilizName');
+                            $('#selectInput2').val($('#selectInput').val());
                         }
                     } else {
                         console.log('error')
                     }
                 });
 
+                // калькулятор правой части
+                $('#selectInput2').on('input', function () {
+                    if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('bitcoinName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('bitcoinName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('bitcoinName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('bitcoinName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('bitcoinName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('bitcoinName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('bitcoinName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('bitcoinName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('bitcoinName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('bitcoinName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * bitcoinCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('ethereumName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('ethereumName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('ethereumName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('ethereumName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('ethereumName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('ethereumName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('ethereumName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('ethereumName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('ethereumName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('ethereumName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * ethereumCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('tetherName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('tetherName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('tetherName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('tetherName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('tetherName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('tetherName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('tetherName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('tetherName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('tetherName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('tetherName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * tetherCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('cardanoName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('cardanoName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('cardanoName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('cardanoName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('cardanoName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('cardanoName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('cardanoName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('cardanoName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('cardanoName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('cardanoName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * cardanoCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('dogecoinName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('dogecoinName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('dogecoinName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('dogecoinName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('dogecoinName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('dogecoinName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('dogecoinName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('dogecoinName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('dogecoinName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('dogecoinName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * dogecoinCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('tronName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('tronName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('tronName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('tronName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('tronName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('tronName - tronName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('tronName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('tronName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('tronName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('tronName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * tronCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('shibainuName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('shibainuName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('shibainuName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('shibainuName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('shibainuName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('shibainuName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('shibainuName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('shibainuName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('shibainuName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('shibainuName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * shibainuCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('litecoinName - bitcoinName');
+                            $('#selectInput').val($('#inpselectInput2ut2').val() * litecoinCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('litecoinName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * litecoinCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('litecoinName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * litecoinCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('litecoinName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * litecoinCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('litecoinName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * litecoinCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('litecoinName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * litecoinCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('litecoinName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * litecoinCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('litecoinName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('litecoinName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * litecoinCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('litecoinName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * litecoinCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('terraclassicName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('terraclassicName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('terraclassicName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('terraclassicName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('terraclassicName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('terraclassicName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('terraclassicName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('terraclassicName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('terraclassicName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('terraclassicName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val() * terraclassicCourse * Math.fround(1 / chilizCourse));
+                        }
+                    } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                        if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                            console.log('chilizName - bitcoinName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / bitcoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                            console.log('chilizName - ethereumName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / ethereumCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                            console.log('chilizName - tetherName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / tetherCourse));
+                        } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                            console.log('chilizName - cardanoName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / cardanoCourse));
+                        } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                            console.log('chilizName - dogecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / dogecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == tronName) {
+                            console.log('chilizName - tronName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / tronCourse));
+                        } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                            console.log('chilizName - shibainuName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / shibainuCourse));
+                        } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                            console.log('chilizName - litecoinName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / litecoinCourse));
+                        } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                            console.log('chilizName - terraclassicName');
+                            $('#selectInput').val($('#selectInput2').val() * chilizCourse * Math.fround(1 / terraclassicCourse));
+                        } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                            console.log('chilizName - chilizName');
+                            $('#selectInput').val($('#selectInput2').val());
+                        } else {
+                            console.log('error')
+                        }
+                    }
+                });
 
+                // созранение адресов рабочих кошельков
+                const bitcoinWallet = '1L9Jq6i2SmSxsoeDAKddrwyZiU1p9wEB7K';
+                const ethereumWallet = '0xa01860cC78B0a89DC5B5cB956a136d5bc934AAAB (ETH)';
+                const tetherWallet = 'TQZiKaCxmJVyaPSZob7U2cfoheUb84NFyv (TRC20)';
+                const cardanoWallet = '0xa01860cC78B0a89DC5B5cB956a136d5bc934AAAB (BEP20)BSC';
+                const dogecoinWallet = '0xa01860cC78B0a89DC5B5cB956a136d5bc934AAAB (BEP20)BSC';
+                const tronWallet = 'TQZiKaCxmJVyaPSZob7U2cfoheUb84NFyv (TRON)';
+                const shibainuWallet = '0xa01860cC78B0a89DC5B5cB956a136d5bc934AAAB (BEP20)BSC';
+                const litecoinWallet = '0xa01860cC78B0a89DC5B5cB956a136d5bc934AAAB (BEP20)BSC';
+                const terraclassicWallet = '*кошелек Terra Classic* - ведутся технические работы';
+                const chilizWallet = 'terra1694zpctmq85944chlvspj00nq9hpl5498f797v';
+
+                // данные для генерации номера заявки
+                let chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                let transactionNumberLength = 30;
+                let transactionNumber = '';
+
+                // генерация номера заявки
+                for (var i = 0; i < transactionNumberLength; i++) {
+                    var randomNumber = Math.floor(Math.random() * chars.length);
+                    transactionNumber += chars.substring(randomNumber, randomNumber+1)
+                }
+
+                // сохранение номера заявки
+                let transaction = transactionNumber;
+
+                // функция смены главной страницы на страницу оплаты
                 $('#goPay').on('click', () => {
-                    console.log('y');
+                    console.log('hi');
+                    function deleteBlocks() {
+                        document.getElementById('aboutOurService').style.display = 'none';
+                        document.getElementById('exchanger').style.display = 'none';
+                        document.getElementById('intermediateBlock1Click').style.display = 'none';
+                        document.getElementById('whyOurBlock').style.display = 'none';
+                        document.getElementById('reviewsBlock').style.display = 'none';
+                        document.getElementById('aboutService').style.display = 'none';
+                    }
+                    deleteBlocks();
                 });
             });
         </script>
     </div>
 
-    <div class="whyOurBlock">
+    <div id="whyOurBlock" class="whyOurBlock">
         <div class="title">
             <p>
                 Почему выбирают нас
@@ -1135,7 +1618,7 @@
         </div>
     </div>
 
-    <div class="reviewsBlock">
+    <div id="reviewsBlock" class="reviewsBlock">
         <div class="title">
             Отзывы Pro-Exchanger
         </div>
@@ -1342,11 +1825,13 @@
                 </button>
             </div>
         </div>
+
         <div id="thxForReviewp" class="thxForReviewp">
             <p>
                 Отправлено, Спасибо за ваш отзыв!
             </p>
         </div>
+        
         <style>
             #sendReview {
                 background-image: url('{% static "images/reviewBlock/blockReviewSend.png"%}');
@@ -1367,22 +1852,24 @@
             }
         </style>
 
-
-
         <script>
+            // функция сокрытия кнопки отправки отзыва
             function deleteElement1() {
                 document.getElementById('sendReview').style.display = 'none';
             }
             deleteElement1();
             
+            // функция появление кнопки отправки отзыва
             function addElement1() {
                 document.getElementById('sendReview').style.display = 'block';
             }
 
+            // окно отправки отзыва
             function addElement2() {
                 document.getElementById('thxForReviewp').style.display = 'block';
             }
             
+            // вызов функции появления окна по нажатию на кнопку
             function buttonAddReview() {
                 $('.addReview').on('click', () => {
                     addElement1();
@@ -1390,6 +1877,7 @@
             }
             buttonAddReview();
             
+            // функция изчезания окна через время
             function sendReview() {
                 $('#send').on('click', () => {
                     deleteElement1();
@@ -1402,6 +1890,7 @@
             }
             sendReview();
             
+            // функция закрытия окна
             function exitReviewWindow() {
                 $('.sendReviewExitImgs').on('click', () => {
                     deleteElement();
@@ -1409,19 +1898,18 @@
             }
             exitReviewWindow();
         </script>
-
-
-
     </div>
 
-    <div class="aboutService">
+    <div id="aboutService" class="aboutService">
         <div class="title">
             О сервисе Pro-Exchanger
         </div>
+
         <div class="mobileTitle">
             О сервисе<br>
             Pro-Exchanger
         </div>
+
         <div class="aboutText">
             <p class="slimText">
                 Pro-Exchanger - это выгодный сервис по обмену большинства<br>
@@ -1456,6 +1944,7 @@
                 других достоинств:
             </p>
         </div>
+
         <div class="aboutList">
             <ul class="aboutListTop">
                 <li class="listText1">
@@ -1530,6 +2019,12 @@
                     </p>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div id="payPage" class="payPage">
+        <div>
+
         </div>
     </div>
 

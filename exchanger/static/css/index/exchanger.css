@@ -84,20 +84,90 @@
     cursor: pointer;
 }
 
-.coinValue1 {
+.leftBlockTextAfter {
     display: none;
-    width: 407px;
-    height: 73px;
-    background: #fff;
-    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    margin-top: 170px;
-    margin-left: 46px;
+    font-family: 'Mont-Regular';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 58px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
-.coinValue2 {
+.rightBlockTextAfter {
     display: none;
-    width: 407px;
+    position: absolute;
+    font-family: 'Mont-Regular';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 58px;
+    color: #fff;
+    margin-left: 655px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.walletChange1After {
+    display: none;
+    background: rgba(0, 255, 240, 0.5);
+    border-radius: 5px;
+    width: 453px;
+    height: 73px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 35px;
+    margin-top: 80px;
+    margin-left: -218px;
+}
+
+.walletChange2After {
+    display: none;
+    position: absolute;
+    background: rgba(0, 255, 240, 0.5);
+    border-radius: 5px;
+    width: 453px;
+    height: 73px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 35px;
+    margin-top: 80px;
+    margin-left: 635px;
+}
+
+.walletChange1After .walletChangeBgAfter {
+    padding-top: 18px;
+}
+
+.walletChange2After .walletChangeBgAfter {
+    padding-top: 18px;
+}
+
+.walletChange1After .walletChangeBgAfter a {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.walletChange2After .walletChangeBgAfter a {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.coinValue1 {
+    display: none;
+    position: absolute;
+    width: 453px;
     height: 73px;
     background: #fff;
     box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
@@ -106,18 +176,30 @@
     margin-left: 0px;
 }
 
+.coinValue2 {
+    display: none;
+    position: absolute;
+    width: 453px;
+    height: 73px;
+    background: #fff;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    margin-top: 170px;
+    margin-left: 635px;
+}
+
 .coinValue1 .selectImg {
     height: 40px;
     width: 40px;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .coinValue2 .selectImg2 {
     height: 40px;
     width: 40px;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .coinValue1 .selectCoin {
@@ -127,7 +209,7 @@
     font-size: 25px;
     line-height: 32px;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 12px;
 }
 
 .coinValue2 .selectCoin2 {
@@ -137,7 +219,7 @@
     font-size: 25px;
     line-height: 32px;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 12px;
 }
 
 .coinValue1 .selectCoinVLine {
@@ -145,7 +227,7 @@
     height: 20px;
     background-color: black;
     margin-top: 24px;
-    margin-left: 8px;
+    margin-left: 12px;
 }
 
 .coinValue2 .selectCoinVLine2 {
@@ -153,7 +235,7 @@
     height: 20px;
     background-color: black;
     margin-top: 24px;
-    margin-left: 8px;
+    margin-left: 12px;
 }
 
 .coinValue1 .selectInput {
@@ -161,7 +243,7 @@
     height: 20px;
     border: none;
     margin-top: 25px;
-    margin-left: 8px;
+    margin-left: 12px;
 }
 
 .coinValue1 .selectInput:active {
@@ -177,7 +259,7 @@
     height: 20px;
     border: none;
     margin-top: 25px;
-    margin-left: 8px;
+    margin-left: 12px;
 }
 
 .coinValue2 .selectInput2:active {
