@@ -5,7 +5,20 @@
     src: url('../../fonts/Mont-Regular.ttf') format('truetype');
 }
 
+#select-btn1 {
+    display: block;
+}
+
+#coinOptions1 {
+    display: block;
+}
+
+#select-menu {
+    display: block;
+}
+
 .select-menu {
+    display: block;
     width: 453px;
     height: 73px;
     font-family: 'Mont-Regular';

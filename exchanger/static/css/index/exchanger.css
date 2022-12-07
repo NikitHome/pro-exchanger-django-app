@@ -21,6 +21,10 @@
     }
 }
 
+.exchanger .leftBlock {
+    display: block;
+}
+
 .exchanger .leftBlock p {
     font-family: 'Mont-Regular';
     font-weight: 800;
@@ -78,6 +82,130 @@
 .exchanger .leftBlock .walletChange1 .walletChangeBg a {
     margin-left: 20px;
     cursor: pointer;
+}
+
+.coinValue1 {
+    display: none;
+    width: 407px;
+    height: 73px;
+    background: #fff;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    margin-top: 170px;
+    margin-left: 46px;
+}
+
+.coinValue2 {
+    display: none;
+    width: 407px;
+    height: 73px;
+    background: #fff;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    margin-top: 170px;
+    margin-left: 0px;
+}
+
+.coinValue1 .selectImg {
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.coinValue2 .selectImg2 {
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.coinValue1 .selectCoin {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.coinValue2 .selectCoin2 {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.coinValue1 .selectCoinVLine {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    margin-top: 24px;
+    margin-left: 8px;
+}
+
+.coinValue2 .selectCoinVLine2 {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    margin-top: 24px;
+    margin-left: 8px;
+}
+
+.coinValue1 .selectInput {
+    width: 110px;
+    height: 20px;
+    border: none;
+    margin-top: 25px;
+    margin-left: 8px;
+}
+
+.coinValue1 .selectInput:active {
+    border: none;
+}
+
+.coinValue1 .selectInput::before {
+    border: none;
+}
+
+.coinValue2 .selectInput2 {
+    width: 110px;
+    height: 20px;
+    border: none;
+    margin-top: 25px;
+    margin-left: 8px;
+}
+
+.coinValue2 .selectInput2:active {
+    border: none;
+}
+
+.coinValue2 .selectInput2::before {
+    border: none;
+}
+
+.coinValue1 .miniCoinText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 27px;
+    margin-left: 10px;
+}
+
+.coinValue2 .miniCoinText2 {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 27px;
+    margin-left: 10px;
 }
 
 .exchanger .centerBlock {

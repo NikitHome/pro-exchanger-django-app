@@ -65,7 +65,7 @@
     </div>
 
     <div class="exchanger">
-        <div class="leftBlock">
+        <div id="leftBlock" class="leftBlock">
             <p class="leftBlockText">
                 Отдаете
             </p>
@@ -79,21 +79,19 @@
                     </a>
                 </div>
             </div>
-            <script>
 
-            </script>
             <div class="select-menu" id="select-menu">
-                <div class="select-btn">
-                    <span id="selectCoin1" class="sBtn-text selected">
+                <div id="select-btn1" class="select-btn">
+                    <span id="dropdownSelectCoin" class="sBtn-text selected">
                         Выбрать
                         <div class="arrow arrow-bottom"></div>
                     </span>
                 </div>
-                <ul class="options" id="coinsOptions">
-                    <li class="option" data-coin="bitcoin" id="bitcoin">
+                <ul class="options" id="coinsOptions1">
+                    <li id="bitcoin" class="option" data-coin="bitcoin">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
                             alt="BitcoinImage">
-                        <span id="bitcoin" class="option-text selected">BITCOIN BTC</span>
+                        <span id="bitcoin coin" class="option-text selected">BITCOIN BTC</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -101,7 +99,7 @@
                     <li class="option" data-coin="ethereum" id="ethereum">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
                             alt="EthereumImage">
-                        <span id="ethereum" class="option-text selected">Ethereum ETH</span>
+                        <span id="ethereum coin" class="option-text selected">Ethereum ETH</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -109,7 +107,7 @@
                     <li class="option" data-coin="tether" id="tether">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
                             alt="TetherImage">
-                        <span id="tether" class="option-text selected">Tether USDT</span>
+                        <span id="tether coin" class="option-text selected">Tether USDT</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -117,7 +115,7 @@
                     <li class="option" data-coin="cardano" id="cardano">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png"
                             alt="CardanoImage">
-                        <span id="cardano" class="option-text selected">Cardano ADA</span>
+                        <span id="cardano coin" class="option-text selected">Cardano ADA</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -125,7 +123,7 @@
                     <li class="option" data-coin="dogecoin" id="dogecoin">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
                             alt="DogecoinImage">
-                        <span id="dogecoin" class="option-text selected">Dogecoin DOGE</span>
+                        <span id="dogecoin coin" class="option-text selected">Dogecoin DOGE</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -133,7 +131,7 @@
                     <li class="option" data-coin="tron" id="tron">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png"
                             alt="TRONImage">
-                        <span id="tron" class="option-text selected">TRON TRX</span>
+                        <span id="tron coin" class="option-text selected">TRON TRX</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -141,7 +139,7 @@
                     <li class="option" data-coin="shibainu" id="shibainu">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png"
                             alt="ShibaInuImage">
-                        <span id="shibainu" class="option-text selected">Shiba Inu SHIB</span>
+                        <span id="shibainu coin" class="option-text selected">Shiba Inu SHIB</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -149,7 +147,7 @@
                     <li class="option" data-coin="litecoin" id="litecoin">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png"
                             alt="LitecoinImage">
-                        <span id="litecoin" class="option-text selected">Litecoin LTC</span>
+                        <span id="litecoin coin" class="option-text selected">Litecoin LTC</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -157,7 +155,7 @@
                     <li class="option" data-coin="terraclassic" id="terraclassic">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png"
                             alt="TerraClassicImage">
-                        <span id="terraclassic" class="option-text selected">Terra Classic LUNC</span>
+                        <span id="terraclassic coin" class="option-text selected">Terra Classic LUNC</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -165,7 +163,7 @@
                     <li class="option" data-coin="chiliz" id="chiliz">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png"
                             alt="ChilizImage">
-                        <span id="chiliz" class="option-text selected">Chiliz CHZ</span>
+                        <span id="chiliz coin" class="option-text selected">Chiliz CHZ</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -189,11 +187,115 @@
                 })
             </script>
         </div>
+
+        <div id="coinValue1" class="coinValue1">
+            <img id="selectImg" class="icon selectImg" src="#" alt="coinimg">
+            <span id="selectCoin" class="selectCoin"></span>
+            <div id="selectCoinVLine" class="selectCoinVLine"></div>
+            <input id="selectInput" class="selectInput" type="text" placeholder="Введите сумму">
+            <span id="miniCoinText" class="miniCoinText"></span>
+        </div>
+        <script>
+            $(document).ready(function() {
+                const srcPicBTC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png';
+                const srcPicETH = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png';
+                const srcPicUSDT = 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png';
+                const srcPicADA = 'https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png';
+                const srcPicDOGE = 'https://s2.coinmarketcap.com/static/img/coins/64x64/74.png';
+                const srcPicTRX = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png';
+                const srcPicSHIB = 'https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png';
+                const srcPicLTC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/2.png';
+                const srcPicLUNC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png';
+                const srcPicCHZ = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png';
+
+                $('#bitcoin').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicBTC;
+                    document.getElementById('selectCoin').innerText = 'BITCOIN';
+                    document.getElementById('miniCoinText').innerText = 'BTC';
+                });
+
+                $('#ethereum').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicETH;
+                    document.getElementById('selectCoin').innerText = 'Ethereum';
+                    document.getElementById('miniCoinText').innerText = 'ETH';
+                });
+
+                $('#tether').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicUSDT;
+                    document.getElementById('selectCoin').innerText = 'Tether';
+                    document.getElementById('miniCoinText').innerText = 'USDT';
+                });
+
+                $('#cardano').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicADA;
+                    document.getElementById('selectCoin').innerText = 'Cardano';
+                    document.getElementById('miniCoinText').innerText = 'ADA';
+                });
+
+                $('#dogecoin').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicDOGE;
+                    document.getElementById('selectCoin').innerText = 'Dogecoin';
+                    document.getElementById('miniCoinText').innerText = 'DOGE';
+                });
+
+                $('#tron').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicTRX;
+                    document.getElementById('selectCoin').innerText = 'TRON';
+                    document.getElementById('miniCoinText').innerText = 'TRX';
+                });
+
+                $('#shibainu').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicSHIB;
+                    document.getElementById('selectCoin').innerText = 'Shiba Inu';
+                    document.getElementById('miniCoinText').innerText = 'SHIB';
+                });
+
+                $('#litecoin').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicLTC;
+                    document.getElementById('selectCoin').innerText = 'Litecoin';
+                    document.getElementById('miniCoinText').innerText = 'LTC';
+                });
+
+                $('#terraclassic').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicLUNC;
+                    document.getElementById('selectCoin').innerText = 'Terra Classic';
+                    document.getElementById('miniCoinText').innerText = 'LUNK';
+                });
+
+                $('#chiliz').on('click', () => {
+                    document.getElementById('leftBlock').style.display = 'none';
+                    document.getElementById('coinValue1').style.display = 'inline-flex';
+                    document.getElementById('selectImg').src = srcPicCHZ;
+                    document.getElementById('selectCoin').innerText = 'Chiliz';
+                    document.getElementById('miniCoinText').innerText = 'CHZ';
+                });
+            })
+        </script>
+
         <div class="centerBlock">
             <img class="desktopCenterBlock" src="{% static "images/index/vector.png" %}">
             <img class="mobileCenterBlock" src="{% static "images/index_mobile/vector_mobile.png" %}">
         </div>
-        <div class="rightBlock">
+
+        <div id="rightBlock" class="rightBlock">
             <p class="rightBlockText">
                 Получите
             </p>
@@ -207,21 +309,19 @@
                     </a>
                 </div>
             </div>
-            <script>
 
-            </script>
-            <div class="select-menu select-menu1" id="select-menu1">
-                <div class="select-btn select-btn1">
-                    <span id="selectCoin2" class="sBtn-text sBtn-text1 selected">
+            <div class="select-menu select-menu1" id="select-menu2">
+                <div id="select-btn2" class="select-btn select-btn1">
+                    <span id="dropdownSelectCoin2" class="sBtn-text sBtn-text1 selected">
                         Выбрать
                         <div class="arrow arrow-bottom"></div>
                     </span>
                 </div>
-                <ul class="options options1" id="coinsOptions1">
+                <ul class="options options1" id="coinOptions2">
                     <li class="option option1" data-coin="bitcoin2" id="bitcoin2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
                             alt="BitcoinImage">
-                        <span id="bitcoin2" class="option-text option-text1 selected1">BITCOIN BTC</span>
+                        <span id="bitcoin2 coin2" class="option-text option-text1 selected1">BITCOIN BTC</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -229,7 +329,7 @@
                     <li class="option option1" data-coin="ethereum2" id="ethereum2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
                             alt="EthereumImage">
-                        <span id="ethereum2" class="option-text option-text1 selected1">Ethereum ETH</span>
+                        <span id="ethereum2 coin2" class="option-text option-text1 selected1">Ethereum ETH</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -237,7 +337,7 @@
                     <li class="option option1" data-coin="tether2" id="tether2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
                             alt="TetherImage">
-                        <span id="tether2" class="option-text option-text1 selected1">Tether USDT</span>
+                        <span id="tether2 coin2" class="option-text option-text1 selected1">Tether USDT</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -245,7 +345,7 @@
                     <li class="option option1" data-coin="cardano2" id="cardano2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png"
                             alt="CardanoImage">
-                        <span id="cardano2" class="option-text option-text1 selected1">Cardano ADA</span>
+                        <span id="cardano2 coin2" class="option-text option-text1 selected1">Cardano ADA</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -253,7 +353,7 @@
                     <li class="option option1" data-coin="dogecoin2" id="dogecoin2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
                             alt="DogecoinImage">
-                        <span id="dogecoin2" class="option-text option-text1 selected1">Dogecoin DOGE</span>
+                        <span id="dogecoin2 coin2" class="option-text option-text1 selected1">Dogecoin DOGE</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -261,7 +361,7 @@
                     <li class="option option1" data-coin="tron2" id="tron2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png"
                             alt="TRONImage">
-                        <span id="tron2" class="option-text option-text1 selected1">TRON TRX</span>
+                        <span id="tron2 coin2" class="option-text option-text1 selected1">TRON TRX</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -269,7 +369,7 @@
                     <li class="option option1" data-coin="shibainu2" id="shibainu2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png"
                             alt="ShibaInuImage">
-                        <span id="shibainu2" class="option-text option-text1 selected1">Shiba Inu SHIB</span>
+                        <span id="shibainu2 coin2" class="option-text option-text1 selected1">Shiba Inu SHIB</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -277,7 +377,7 @@
                     <li class="option option1" data-coin="litecoin2" id="litecoin2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png"
                             alt="LitecoinImage">
-                        <span id="litecoin2" class="option-text option-text1 selected1">Litecoin LTC</span>
+                        <span id="litecoin2 coin2" class="option-text option-text1 selected1">Litecoin LTC</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -285,7 +385,7 @@
                     <li class="option option1" data-coin="terraclassic2" id="terraclassic2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png"
                             alt="TerraClassicImage">
-                        <span id="terraclassic2" class="option-text option-text1 selected1">Terra Classic
+                        <span id="terraclassic2 coin2" class="option-text option-text1 selected1">Terra Classic
                             LUNC</span>
                     </li>
                     <li class="intermediateListLine">
@@ -294,7 +394,7 @@
                     <li class="option option1" data-coin="chiliz2" id="chiliz2">
                         <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png"
                             alt="ChilizImage">
-                        <span id="chiliz2" class="option-text option-text1 selected1">Chiliz CHZ</span>
+                        <span id="chiliz2 coin2" class="option-text option-text1 selected1">Chiliz CHZ</span>
                     </li>
                     <li class="intermediateListLine">
                         <div class="coinListHorLine"></div>
@@ -318,9 +418,104 @@
                 })
             </script>
         </div>
+
+        <div id="coinValue2" class="coinValue2">
+            <img id="selectImg2" class="icon selectImg2" src="#" alt="coinimg">
+            <span id="selectCoin2" class="selectCoin2"></span>
+            <div id="selectCoinVLine2" class="selectCoinVLine2"></div>
+            <input id="selectInput2" class="selectInput2" type="text" placeholder="Введите сумму">
+            <span id="miniCoinText2" class="miniCoinText2"></span>
+        </div>
+        <script>
+            $(document).ready(function() {
+                const srcPicBTC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png';
+                const srcPicETH = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png';
+                const srcPicUSDT = 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png';
+                const srcPicADA = 'https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png';
+                const srcPicDOGE = 'https://s2.coinmarketcap.com/static/img/coins/64x64/74.png';
+                const srcPicTRX = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png';
+                const srcPicSHIB = 'https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png';
+                const srcPicLTC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/2.png';
+                const srcPicLUNC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png';
+                const srcPicCHZ = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png';
+
+                $('#bitcoin2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicBTC;
+                    document.getElementById('selectCoin2').innerText = 'BITCOIN';
+                    document.getElementById('miniCoinText2').innerText = 'BTC';
+                });
+                $('#ethereum2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicETH;
+                    document.getElementById('selectCoin2').innerText = 'Ethereum';
+                    document.getElementById('miniCoinText2').innerText = 'ETH';
+                });
+                $('#tether2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicUSDT;
+                    document.getElementById('selectCoin2').innerText = 'Tether';
+                    document.getElementById('miniCoinText2').innerText = 'USDT';
+                });
+                $('#cardano2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicADA;
+                    document.getElementById('selectCoin2').innerText = 'Cardano';
+                    document.getElementById('miniCoinText2').innerText = 'ADA';
+                });
+                $('#dogecoin2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicDOGE;
+                    document.getElementById('selectCoin2').innerText = 'Dogecoin';
+                    document.getElementById('miniCoinText2').innerText = 'DOGE';
+                });
+                $('#tron2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicTRX;
+                    document.getElementById('selectCoin2').innerText = 'TRON';
+                    document.getElementById('miniCoinText2').innerText = 'TRX';
+                });
+                $('#shibainu2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicSHIB;
+                    document.getElementById('selectCoin2').innerText = 'Shiba Inu';
+                    document.getElementById('miniCoinText2').innerText = 'SHIB';
+                });
+                $('#litecoin2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicLTC;
+                    document.getElementById('selectCoin2').innerText = 'Litecoin';
+                    document.getElementById('miniCoinText2').innerText = 'LTC';
+                });
+                $('#terraclassic2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicLUNC;
+                    document.getElementById('selectCoin2').innerText = 'Terra Classic';
+                    document.getElementById('miniCoinText2').innerText = 'LUNK';
+                });
+                $('#chiliz2').on('click', () => {
+                    document.getElementById('rightBlock').style.display = 'none';
+                    document.getElementById('coinValue2').style.display = 'inline-flex';
+                    document.getElementById('selectImg2').src = srcPicCHZ;
+                    document.getElementById('selectCoin2').innerText = 'Chiliz';
+                    document.getElementById('miniCoinText2').innerText = 'CHZ';
+                });
+
+                
+            })
+        </script>
     </div>
 
-    <div class="intermediateBlock1">
+    <div id="intermediateBlock1" class="intermediateBlock1">
         <div class="text">
             <p>
                 Обмен происходит в полуавтоматическом режиме<br>
@@ -331,6 +526,559 @@
             <img class="textRadiusImg" id="words360" src="{% static 'images/index/textRadius.png' %}">
             <img class="textRadiusVectorImg" src="{% static 'images/index/textRadiusVector.png' %}">
         </div>
+    </div>
+
+    <div id="intermediateBlock1Click" class="intermediateBlock1Click">
+        <div class="walletNumInput">
+            <input id="walletNumInput" type="text" placeholder="Номер кошелька">
+        </div>
+        <div class="emailInput">
+            <input id="emailInput" type="text" placeholder="Email">
+        </div>
+        <div class="checkboxInput">
+            <input id="checkboxInput" type="checkbox">
+            <p>
+                Я соглашаюсь с правилами обмена
+            </p>
+        </div>
+        <div class="buttonInput">
+            <button id="goPay" disabled="disabled">
+                Начать обмен
+            </button>
+        </div>
+        <div class="questionsText">
+            <a href="#">
+                Возникли сложности?
+            </a>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                spanValue1 = $('#selectCoin1').text();
+                spanValue2 = $('#selectCoin2').text();
+                text = 'Выбрать';
+
+                $('.select-btn').on('click', function() {
+                    document.getElementById('intermediateBlock1').style.display = 'none';
+                    document.getElementById('intermediateBlock1Click').style.display = 'block';
+                });
+            })
+        </script>
+
+        <script>
+            $(function() {
+                $("#intermediateBlock1Click").on('change input paste', 'input', function(e) {
+                    $('#goPay').prop('disabled', !$("#walletNumInput").val() || !$('#emailInput').val() || !$('#checkboxInput').val());
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                function bitcoin() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            bitcoinVal = data.price;
+                        }
+                    });
+                    return bitcoinVal;
+                }
+                bitcoin();
+                console.log(bitcoinVal);
+
+                function ethereum() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=ETHUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            ethereumVal = data.price;
+                        }
+                    });
+                    return ethereumVal;
+                }
+                ethereum();
+                console.log(ethereumVal);
+
+                function tether() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=TUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            tetherVal = data.price;
+                        }
+                    });
+                    return tetherVal;
+                }
+                tether();
+                console.log(tetherVal);
+
+                function cardano() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=ADAUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            cardanoVal = data.price;
+                        }
+                    });
+                    return cardanoVal;
+                }
+                cardano();
+                console.log(cardanoVal);
+
+                function dogecoin() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=DOGEUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            dogecoinVal = data.price;
+                        }
+                    });
+                    return dogecoinVal;
+                }
+                dogecoin();
+                console.log(dogecoinVal);
+
+                function tron() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=TRXUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            tronVal = data.price;
+                        }
+                    });
+                    return tronVal;
+                }
+                tron();
+                console.log(tronVal);
+
+                function shibainu() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=SHIBUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            shibainuVal = data.price;
+                        }
+                    });
+                    return shibainuVal;
+                }
+                shibainu();
+                console.log(shibainuVal);
+
+                function litecoin() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=LTCUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            litecoinVal = data.price;
+                        }
+                    });
+                    return litecoinVal;
+                }
+                litecoin();
+                console.log(litecoinVal);
+
+                function terraclassic() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=LUNCUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            terraclassicVal = data.price;
+                        }
+                    });
+                    return terraclassicVal;
+                }
+                terraclassic();
+                console.log(terraclassicVal);
+
+                function chiliz() {
+                    $.ajax({
+                        async: false,
+                        url: 'https://api.binance.com/api/v3/ticker/price?symbol=CHZUSDT',
+                        type: 'get',
+                        dataType: 'json',
+                        success: function(data) {
+                            chilizVal = data.price;
+                        }
+                    });
+                    return chilizVal;
+                }
+                chiliz();
+                console.log(chilizVal);
+
+                const bitcoinCourse = bitcoinVal;
+                const ethereumCourse = ethereumVal;
+                const tetherCourse = tetherVal;
+                const cardanoCourse = cardanoVal;
+                const dogecoinCourse = dogecoinVal;
+                const tronCourse = tronVal;
+                const shibainuCourse = shibainuVal;
+                const litecoinCourse = litecoinVal;
+                const terraclassicCourse = terraclassicVal;
+                const chilizCourse = chilizVal;
+
+                const bitcoinName = 'BITCOIN BTC';
+                const ethereumName = 'Ethereum ETH';
+                const tetherName = 'Tether USDT';
+                const cardanoName = 'Cardano ADA';
+                const dogecoinName = 'Dogecoin DOGE';
+                const tronName = 'TRON TRX';
+                const shibainuName = 'Shiba Inu SHIB';
+                const litecoinName = 'Litecoin LTC';
+                const terraclassicName = 'Terra Classic LUNC';
+                const chilizName = 'Chiliz CHZ';
+
+                $('#selectInput').on('input', function () {
+                    if ($('#dropdownSelectCoin').text() == bitcoinName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('bitcoinName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('bitcoinName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('bitcoinName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('bitcoinName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('bitcoinName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('bitcoinName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('bitcoinName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('bitcoinName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('bitcoinName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('bitcoinName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * bitcoinCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == ethereumName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('ethereumName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('ethereumName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('ethereumName - tetherName')
+                            $('#selectInput2').val($('#input1').val() * ethereumCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('ethereumName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('ethereumName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('ethereumName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('ethereumName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('ethereumName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('ethereumName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('ethereumName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * ethereumCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == tetherName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('tetherName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('tetherName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('tetherName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('tetherName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('tetherName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('tetherName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('tetherName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('tetherName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('tetherName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('tetherName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * tetherCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == cardanoName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('cardanoName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('cardanoName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('cardanoName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('cardanoName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('cardanoName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('cardanoName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('cardanoName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('cardanoName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('cardanoName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('cardanoName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * cardanoCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == dogecoinName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('dogecoinName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('dogecoinName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('dogecoinName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('dogecoinName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('dogecoinName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('dogecoinName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('dogecoinName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('dogecoinName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('dogecoinName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('dogecoinName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * dogecoinCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == tronName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('tronName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('tronName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('tronName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('tronName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('tronName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('tronName - tronName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('tronName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('tronName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('tronName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('tronName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * tronCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == shibainuName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('shibainuName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('shibainuName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('shibainuName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('shibainuName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('shibainuName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('shibainuName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('shibainuName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('shibainuName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('shibainuName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('shibainuName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * shibainuCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == litecoinName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('litecoinName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('litecoinName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('litecoinName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('litecoinName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('litecoinName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('litecoinName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('litecoinName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('litecoinName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('litecoinName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('litecoinName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * litecoinCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == terraclassicName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('terraclassicName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('terraclassicName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('terraclassicName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('terraclassicName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('terraclassicName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('terraclassicName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('terraclassicName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('terraclassicName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('terraclassicName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('terraclassicName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val() * terraclassicCourse * Math.fround(1 / chilizCourse))
+                        }
+                    } else if ($('#dropdownSelectCoin').text() == chilizName) {
+                        if ($('#dropdownSelectCoin2').text() == bitcoinName) {
+                            console.log('chilizName - bitcoinName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / bitcoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == ethereumName) {
+                            console.log('chilizName - ethereumName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / ethereumCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tetherName) {
+                            console.log('chilizName - tetherName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / tetherCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == cardanoName) {
+                            console.log('chilizName - cardanoName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / cardanoCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == dogecoinName) {
+                            console.log('chilizName - dogecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / dogecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == tronName) {
+                            console.log('chilizName - tronName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / tronCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == shibainuName) {
+                            console.log('chilizName - shibainuName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / shibainuCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == litecoinName) {
+                            console.log('chilizName - litecoinName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / litecoinCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == terraclassicName) {
+                            console.log('chilizName - terraclassicName')
+                            $('#selectInput2').val($('#selectInput').val() * chilizCourse * Math.fround(1 / terraclassicCourse))
+                        } else if ($('#dropdownSelectCoin2').text() == chilizName) {
+                            console.log('chilizName - chilizName')
+                            $('#selectInput2').val($('#selectInput').val())
+                        }
+                    } else {
+                        console.log('error')
+                    }
+                });
+
+
+                $('#goPay').on('click', () => {
+                    console.log('y');
+                });
+            });
+        </script>
     </div>
 
     <div class="whyOurBlock">
@@ -618,6 +1366,9 @@
                 }
             }
         </style>
+
+
+
         <script>
             function deleteElement1() {
                 document.getElementById('sendReview').style.display = 'none';
@@ -658,6 +1409,9 @@
             }
             exitReviewWindow();
         </script>
+
+
+
     </div>
 
     <div class="aboutService">

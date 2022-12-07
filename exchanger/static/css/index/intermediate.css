@@ -7,7 +7,9 @@
 
 .intermediateBlock1 {
     margin-top: 100px;
+    display: block;
 }
+
 @media (min-width: 350px) and (max-width: 480px) {
     .intermediateBlock1 {
         margin-top: -30px;
@@ -24,6 +26,7 @@
     color: #fff;
     text-align: center;
 }
+
 @media (min-width: 350px) and (max-width: 480px) {
     .intermediateBlock1 .text {
         width: 280px;
@@ -123,4 +126,94 @@
     position: absolute;
     margin-left: -41.5px;
     margin-top: 22px;
+}
+
+
+
+
+.intermediateBlock1Click {
+    display: none;
+    margin-left: 480px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.intermediateBlock1Click .walletNumInput {
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.intermediateBlock1Click .walletNumInput input {
+    width: 453px;
+    height: 73px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 0 20px;
+    padding-top: 0px;
+    font-size: 30px;
+    border: none;
+}
+
+.intermediateBlock1Click .emailInput input {
+    width: 453px;
+    height: 73px;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 0 20px;
+    padding-top: 0px;
+    font-size: 30px;
+    border: none;
+}
+
+.intermediateBlock1Click .checkboxInput {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.intermediateBlock1Click .checkboxInput input {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+.intermediateBlock1Click .checkboxInput p {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #fff;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.intermediateBlock1Click .buttonInput button {
+    width: 245px;
+    height: 52px;
+    background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
+    border-radius: 6px;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.intermediateBlock1Click .questionsText {
+    margin-top: 10px;
+}
+
+.intermediateBlock1Click .questionsText a {
+    color: #fff;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    text-decoration-line: underline;
 }
