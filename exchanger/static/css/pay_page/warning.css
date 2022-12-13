@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.payPage .warning {
+    margin-top: 130px;
+    margin-left: 160px;
+}
+
+.payPage .warning .warningTitle {
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 64px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+}
+
+.payPage .warning .warningText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 190.3%;
+    color: #fff;
+    font-family: 'Mont-Regular';
+    margin-top: -40px;
+}
+
+.payPage .warning .groupButtons {
+    display: inline-flex;
+}
+
+.payPage .warning .groupButtons .iPay {
+    background: linear-gradient(87.78deg, #04DD00 -17.66%, #00FFF0 -17.65%, rgba(34, 112, 185, 0.65) 50.4%, #00FFC2 114.33%);
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    border: none;
+    width: 291px;
+    height: 67px;
+}
+
+.payPage .warning .groupButtons .doNotPay {
+    display: inline-flex;
+    background: none;
+    border: none;
+    color: #B50000;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 190.3%;
+    margin-left: 20px;
+}
+
+.payPage .warning .groupButtons .doNotPay img {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.payPage .warning .groupButtons .doNotPay p {
+    margin-top: 8px;
+}

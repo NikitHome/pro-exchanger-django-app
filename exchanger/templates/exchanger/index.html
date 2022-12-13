@@ -3,18 +3,24 @@
 {% load static %}
 
 {% block styles %}
-    <link rel="stylesheet" href="{% static 'css/base/main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/base/navbar.css' %}">
-    <link rel="stylesheet" href="{% static 'css/base/footer.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/about_our_service.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/about_service.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/arrow.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/dropdown.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/exchanger.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/intermediate.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/reviews_block.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/send_review.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index/why_select_our.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/base/main.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/base/navbar.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/base/footer.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/about_our_service.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/about_service.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/arrow.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/dropdown.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/exchanger.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/intermediate.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/reviews_block.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/send_review.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/index/why_select_our.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/pay_page/application.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/pay_page/complete_application.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/pay_page/requisites.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/pay_page/support.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/pay_page/trade.css' %}">
+    <link rel="stylesheet" style="text/css" href="{% static 'css/pay_page/warning.css' %}">
 {% endblock %}
 
 {% block additional_styles %}
@@ -626,29 +632,39 @@
         </div>
     </div>
 
-    <div id="intermediateBlock1Click" class="intermediateBlock1Click">
-        <div class="walletNumInput">
-            <input id="walletNumInput" type="text" placeholder="Номер кошелька">
+    <div class="groupIntermediate">
+        <div id="intermediateBlock1ClickLeft" class="intermediateBlock1ClickLeft">
+            <div><input id="courseLeftRight" class="courseLeftRight" disabled="true"/></div>
+            <div><input id="minSumm" class="minSumm" disabled="true"/></div>
+            <div><input id="maxSum" class="maxSum" disabled="true"/></div>
+            <div><input id="rezerv" class="rezerv" disabled="true"/></div>
         </div>
-        <div class="emailInput">
-            <input id="emailInput" type="text" placeholder="Email">
+
+        <div id="intermediateBlock1Click" class="intermediateBlock1Click">
+            <div class="walletNumInput">
+                <input id="walletNumInput" placeholder="Номер кошелька">
+            </div>
+            <div class="emailInput">
+                <input id="emailInput" type="text" placeholder="Email">
+            </div>
+            <div class="checkboxInput">
+                <input id="checkboxInput" type="checkbox">
+                <p>
+                    Я соглашаюсь с правилами обмена
+                </p>
+            </div>
+            <div class="buttonInput">
+                <button id="goPay" disabled="disabled">
+                    Начать обмен
+                </button>
+            </div>
+            <div class="questionsText">
+                <a href="#">
+                    Возникли сложности?
+                </a>
+            </div>
         </div>
-        <div class="checkboxInput">
-            <input id="checkboxInput" type="checkbox">
-            <p>
-                Я соглашаюсь с правилами обмена
-            </p>
-        </div>
-        <div class="buttonInput">
-            <button id="goPay" disabled="disabled">
-                Начать обмен
-            </button>
-        </div>
-        <div class="questionsText">
-            <a href="#">
-                Возникли сложности?
-            </a>
-        </div>
+    </div>
 
         <script>
             // функция скрывает межблоковые элементы и показывает форму
@@ -660,6 +676,7 @@
                 $('.select-btn').on('click', function() {
                     document.getElementById('intermediateBlock1').style.display = 'none';
                     document.getElementById('intermediateBlock1Click').style.display = 'block';
+                    document.getElementById('intermediateBlock1ClickLeft').style.display = 'block';
                 });
             })
         </script>
@@ -827,7 +844,7 @@
                     terraclassic();
                     chiliz();
                 }
-                //giveCoins();
+                giveCoins();
 
                 function showCoins() {
                     console.log(bitcoinVal);
@@ -841,7 +858,7 @@
                     console.log(terraclassicVal);
                     console.log(chilizVal);
                 }
-                //showCoins();
+                showCoins();
 
                 // сохранение курса монет
                 const bitcoinCourse = bitcoinVal;
@@ -866,6 +883,18 @@
                 const litecoinName = 'Litecoin LTC';
                 const terraclassicName = 'Terra Classic LUNC';
                 const chilizName = 'Chiliz CHZ';
+
+                // сохранение сокращенных названий монет
+                const bitcoinMiniName = 'BTC';
+                const ethereumMiniName = 'ETH';
+                const tetherMiniName = 'USDT';
+                const cardanoMiniName = 'ADA';
+                const dogecoinMiniName = 'DOGE';
+                const tronMiniName = 'TRX';
+                const shibainuMiniName = 'SHIB';
+                const litecoinMiniName = 'LTC';
+                const terraclassicMiniName = 'LUNC';
+                const chilizMiniName = 'CHZ';
 
                 // калькулятор левой части
                 $('#selectInput').on('input', function () {
@@ -1521,6 +1550,92 @@
                     }
                 });
 
+                let leftCoin = $('#dropdownSelectCoin').text();
+                let rightCoin = $('#dropdownSelectCoin2').text();
+
+                let miniName1;
+                let leftCourse;
+                if (leftCoin == bitcoinName) {
+                    miniName1 = bitcoinMiniName;
+                    leftCourse = bitcoinCourse;
+                } else if (leftCoin == ethereumName) {
+                    miniName1 = ethereumMiniName;
+                    leftCourse = ethereumCourse;
+                } else if (leftCoin == tetherName) {
+                    miniName1 = tetherMiniName;
+                    leftCourse = tetherCourse;
+                } else if (leftCoin == cardanoName) {
+                    miniName1 = cardanoMiniName;
+                    leftCourse = cardanoCourse;
+                } else if (leftCoin == dogecoinName) {
+                    miniName1 = dogecoinMiniName;
+                    leftCourse = dogecoinCourse;
+                } else if (leftCoin == tronName) {
+                    miniName1 = tronMiniName;
+                    leftCourse = tronCourse;
+                } else if (leftCoin == shibainuName) {
+                    miniName1 = shibainuMiniName;
+                    leftCourse = shibainuCourse;
+                } else if (leftCoin == litecoinName) {
+                    miniName1 = litecoinMiniName;
+                    leftCourse = litecoinCourse;
+                } else if (leftCoin === terraclassicName) {
+                    miniName1 = terraclassicMiniName;
+                    leftCourse = terraclassicCourse;
+                } else if (leftCoin == chilizName) {
+                    miniName1 = chilizMiniName;
+                    leftCourse = chilizCourse;
+                } else {
+                    console.log('error');
+                }
+
+                let miniName2;
+                let rightCourse;
+                if (rightCoin == bitcoinName) {
+                    miniName2 = bitcoinMiniName;
+                    rightCourse = bitcoinCourse;
+                } else if (rightCoin == ethereumName) {
+                    miniName2 = ethereumMiniName;
+                    rightCourse = ethereumCourse;
+                } else if (rightCoin == tetherName) {
+                    miniName2 = tetherMiniName;
+                    rightCourse = tetherCourse;
+                } else if (rightCoin == cardanoName) {
+                    miniName2 = cardanoMiniName;
+                    rightCourse = cardanoCourse;
+                } else if (rightCoin == dogecoinName) {
+                    miniName2 = dogecoinMiniName;
+                    rightCourse = dogecoinCourse;
+                } else if (rightCoin == tronName) {
+                    miniName2 = tronMiniName;
+                    rightCourse = tronCourse;
+                } else if (rightCoin == shibainuName) {
+                    miniName2 = shibainuMiniName;
+                    rightCourse = shibainuCourse;
+                } else if (rightCoin == litecoinName) {
+                    miniName2 = litecoinMiniName;
+                    rightCourse = litecoinCourse;
+                } else if (rightCoin === terraclassicName) {
+                    miniName2 = terraclassicMiniName;
+                    rightCourse = terraclassicCourse;
+                } else if (rightCoin == chilizName) {
+                    miniName2 = chilizMiniName;
+                    rightCourse = chilizCourse;
+                } else {
+                    console.log('error');
+                }
+
+                $('#selectInput').on('input', () => {
+                    let one = rightCourse * Math.fround(1 / leftCourse);
+                    $('#courseLeftRight').val("Курс 1" + miniName1 + "=" + one + miniName2);
+                    let two = `Мин. сумма обмена: ${Math.fround(1 / leftCourse)} ${miniName1}`;
+                    $('#minSumm').val(two);
+                    let three =`Макс. сумма обмена: ${Math.fround(1000 / leftCoin)} ${miniName1}`;
+                    $('#maxSum').val(three);
+                    let four = `100 000 ${miniName2}`;
+                    $('#rezerv').val();
+                });
+
                 // созранение адресов рабочих кошельков
                 const bitcoinWallet = '1L9Jq6i2SmSxsoeDAKddrwyZiU1p9wEB7K';
                 const ethereumWallet = '0xa01860cC78B0a89DC5B5cB956a136d5bc934AAAB (ETH)';
@@ -1535,7 +1650,7 @@
 
                 // данные для генерации номера заявки
                 let chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-                let transactionNumberLength = 30;
+                let transactionNumberLength = 15;
                 let transactionNumber = '';
 
                 // генерация номера заявки
@@ -1549,7 +1664,6 @@
 
                 // функция смены главной страницы на страницу оплаты
                 $('#goPay').on('click', () => {
-                    console.log('hi');
                     function deleteBlocks() {
                         document.getElementById('aboutOurService').style.display = 'none';
                         document.getElementById('exchanger').style.display = 'none';
@@ -1559,10 +1673,135 @@
                         document.getElementById('aboutService').style.display = 'none';
                     }
                     deleteBlocks();
+
+                    function addElements() {
+                        document.getElementById('payPage').style.display = 'block';
+                    }
+                    addElements();
+
+                    document.getElementById('applicationNumber').value = transaction;
+
+                    document.getElementById('courseValue').value = `${leftCourse} ${miniName1} - 1 ${miniName2}`;
+                    
+                    let count = 59;
+                    let counter = setInterval(timer, 1000);
+
+                    function timer() {
+                        count = count - 1;
+                        if (count <= 0) {
+                            count = 59;
+                        }
+
+                        document.getElementById('timer').innerHTML = "00:" + count;
+                    }
+
+                    const srcPicBTC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png';
+                    const srcPicETH = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png';
+                    const srcPicUSDT = 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png';
+                    const srcPicADA = 'https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png';
+                    const srcPicDOGE = 'https://s2.coinmarketcap.com/static/img/coins/64x64/74.png';
+                    const srcPicTRX = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png';
+                    const srcPicSHIB = 'https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png';
+                    const srcPicLTC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/2.png';
+                    const srcPicLUNC = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png';
+                    const srcPicCHZ = 'https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png';
+
+                    // проверка на иконку левой монеты
+                    let leftCoinImg;
+                    if (leftCoin == bitcoinName) {
+                        leftCoinImg = srcPicBTC;
+                    } else if (leftCoin == ethereumName) {
+                        leftCoinImg = srcPicETH;
+                    } else if (leftCoin == tetherName) {
+                        leftCoinImg = srcPicUSDT;
+                    } else if (leftCoin == cardanoName) {
+                        leftCoinImg = srcPicADA;
+                    } else if (leftCoin == dogecoinName) {
+                        leftCoinImg = srcPicDOGE;
+                    } else if (leftCoin == tronName) {
+                        leftCoinImg = srcPicTRX;
+                    } else if (leftCoin == shibainuName) {
+                        leftCoinImg = srcPicSHIB;
+                    } else if (leftCoin == litecoinName) {
+                        leftCoinImg = srcPicLTC;
+                    } else if (leftCoin === terraclassicName) {
+                        leftCoinImg = srcPicLUNC;
+                    } else if (leftCoin == chilizName) {
+                        leftCoinImg = srcPicCHZ;
+                    } else {
+                        console.log('error');
+                    }
+
+                    // проверка на иконку правой монеты
+                    let rightCoinImg;
+                    if (rightCoin == bitcoinName) {
+                        rightCoinImg = srcPicBTC;
+                    } else if (rightCoin == ethereumName) {
+                        rightCoinImg = srcPicETH;
+                    } else if (rightCoin == tetherName) {
+                        rightCoinImg = srcPicUSDT;
+                    } else if (rightCoin == cardanoName) {
+                        rightCoinImg = srcPicADA;
+                    } else if (rightCoin == dogecoinName) {
+                        rightCoinImg = srcPicDOGE;
+                    } else if (rightCoin == tronName) {
+                        rightCoinImg = srcPicTRX;
+                    } else if (rightCoin == shibainuName) {
+                        rightCoinImg = srcPicSHIB;
+                    } else if (rightCoin == litecoinName) {
+                        rightCoinImg = srcPicLTC;
+                    } else if (rightCoin === terraclassicName) {
+                        rightCoinImg = srcPicLUNC;
+                    } else if (rightCoin == chilizName) {
+                        rightCoinImg = srcPicCHZ;
+                    } else {
+                        console.log('error');
+                    }
+
+                    let leftValue = document.getElementById('selectInput').innerText;
+                    let giveNumVal = $('#selectInput').val();
+                    document.getElementById('giveCoinImg').src = leftCoinImg;
+                    document.getElementById('coinName1').value = `${leftCoin} ${leftValue}`;
+                    document.getElementById('giveNumAndMiniCoin').value = `${giveNumVal} ${miniName1}`;
+
+                    let rightValue = document.getElementById('selectInput2').innerText;
+                    document.getElementById('getCoinImg').src = rightCoinImg;
+                    document.getElementById('coinName2').value = `${rightCoin} ${rightValue}`;
+
+                    console.log($('#walletNumInput').val())
+                    document.getElementById('wallet').value = $('#walletNumInput').val();
+
+                    let serviceWallet;
+                    if (rightCoin == bitcoinName) {
+                        serviceWallet = bitcoinWallet;
+                    } else if (rightCoin == ethereumName) {
+                        serviceWallet = ethereumWallet;
+                    } else if (rightCoin == tetherName) {
+                        serviceWallet = tetherWallet;
+                    } else if (rightCoin == cardanoName) {
+                        serviceWallet = cardanoWallet;
+                    } else if (rightCoin == dogecoinName) {
+                        serviceWallet = dogecoinWallet;
+                    } else if (rightCoin == tronName) {
+                        serviceWallet = tronWallet;
+                    } else if (rightCoin == shibainuName) {
+                        serviceWallet = shibainuWallet;
+                    } else if (rightCoin == litecoinName) {
+                        serviceWallet = litecoinWallet;
+                    } else if (rightCoin === terraclassicName) {
+                        serviceWallet = terraclassicWallet;
+                    } else if (rightCoin == chilizName) {
+                        serviceWallet = chilizWallet;
+                    } else {
+                        console.log('error');
+                    }
+
+                    document.getElementById('numWalletText').value = serviceWallet;
+
+                    document.getElementById('sumWalletText').value = `${giveNumVal} ${miniName1}`;
                 });
             });
         </script>
-    </div>
 
     <div id="whyOurBlock" class="whyOurBlock">
         <div class="title">
@@ -1831,7 +2070,7 @@
                 Отправлено, Спасибо за ваш отзыв!
             </p>
         </div>
-        
+
         <style>
             #sendReview {
                 background-image: url('{% static "images/reviewBlock/blockReviewSend.png"%}');
@@ -2023,8 +2262,143 @@
     </div>
 
     <div id="payPage" class="payPage">
-        <div>
+        <div class="application">
+            <div class="num">
+                <p class="payText1">
+                    №
+                </p>
+                <p class="payText2">
+                    Заявки
+                </p>
+            </div>
 
+            <div class="payPageVLine"></div>
+
+            <div class="info">
+                <input disabled="true" id="applicationNumber" class="applicationNumber">
+                <p class="course">
+                    Курс обмена <input disabled="true" id="courseValue" class="courseValue">
+                </p>
+                <p class="timerText">
+                    Курс может быть пересчитан через <span id="timer" class="timer"></span>
+                </p>
+            </div>
+
+            <div class="vector">
+                <img src="{% static "images/pay_page/Arrow 6.png" %}">
+            </div>
+        </div>
+
+        <div class="trade">
+            <div class="giveItAway">
+                <p class="giveText">
+                    Отдаете
+                </p>
+                <div class="giveInfo">
+                    <img id="giveCoinImg" class="giveCoinImg" src='#'>
+                    <input id="coinName1" class="coinName1" disabled="true">
+                </div>
+                <div class="giveValue">
+                    <input id="giveNumAndMiniCoin" class="giveNumAndMiniCoin" disabled="true">
+                </div>
+            </div>
+
+            <div class="get">
+                <p class="getText">
+                    Получите
+                </p>
+                <div class="getInfo">
+                    <img id="getCoinImg" class="getCoinImg" src='#'>
+                    <input id="coinName2" class="coinName2" disabled="true">
+                </div>
+                <div>
+                    <p class="walletText">
+                        Вы получаете на кошелек
+                    </p>
+                    <p class="walletValue">
+                        Номер кошелька: <input id="wallet" class="wallet" disabled="true">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="status">
+            <div class="statusInfiniteVector">
+                <img src="{% static "images/pay_page/Vector.png" %}">
+            </div>
+
+            <div class="statusVLine"></div>
+
+            <div class="statusContent">
+                <p class="statusTitle">
+                    Статус
+                </p>
+                <p class="statusText">
+                    Ожидаем подтверждения оплаты
+                </p>
+            </div>
+
+            <div class="statusVector">
+                <img src="{% static "images/pay_page/Arrow 6.png" %}">
+            </div>
+        </div>
+
+        <div class="completeApplication">
+            <p class="completeTitle">
+                Для завершения создания заявки необходимо:
+            </p>
+            <p class="firstCompleteText">
+                1. Войти в свою программу для перевода средств
+            </p>
+            <p class="secondCompleteText">
+                2. Сделать перевод по следующим реквизитам
+            </p>
+        </div>
+
+        <div class="requisites">
+            <div class="numWallet">
+                <p>
+                    Номер кошелька
+                </p>
+                <input id="numWalletText" class="numWalletText" disabled="true">
+            </div>
+
+            <div class="summWallet">
+                <p>
+                    Сумма перевода 
+                </p>
+                <input id="sumWalletText" class="sumWalletText" disabled="true">
+            </div>
+        </div>
+
+        <div class="warning">
+            <p class="warningTitle">
+                Обязательно !
+            </p>
+            <p class="warningText">
+                После оплаты, нажать кнопку «Я оплатил»
+            </p>
+            <div class="groupButtons">
+                <button id="iPay" class="iPay">
+                    Я оплатил
+                </button>
+                <button id="doNotPay" class="doNotPay">
+                    <img src="{% static "images/pay_page/Group 22065.png" %}">
+                    <p>Отменить заявку</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="support">
+            <img src="{% static "images/pay_page/support-icon 1.png" %}">
+            <div class="supTextGroup">
+                <p class="questions">
+                    Есть ли вопросы ?
+                </p>
+                <p class="supText">
+                    Служба поддержки
+                </p>
+            </div>
         </div>
     </div>
 

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.payPage {
+    display: none;
+}
+
+.payPage .application {
+    width: 1116px;
+    height: 193px;
+    background-color: #fff;
+    border-radius: 14px;
+    display: inline-flex;
+    margin-left: 160px;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.payPage .application .num .payText1 {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 89px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.payPage .application .num .payText2 {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+.payPage .application .payPageVLine {
+    width: 4px;
+    height: 135px;
+    margin-top: 58px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #000;
+}
+
+.payPage .application .info .applicationNumber {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: #00A097;
+    margin-top: 20px;
+    border: none;
+}
+
+.payPage .application .info .applicationNumber:disabled {
+    background-color: #fff;
+    border: none;
+}
+
+.payPage .application .info .course {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    margin-top: 0px;
+}
+
+.payPage .application .info .course .courseValue {
+    width: 400px;
+    background-color: #fff;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #000;
+    border: none;
+    padding-top: 10px;
+}
+
+.payPage .application .info .timerText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    margin-top: -25px;
+}
+
+.payPage .application .info .timer {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: red;
+}
+
+.payPage .application .vector {
+    margin-top: 50px;
+    margin-left: 160px;
+}

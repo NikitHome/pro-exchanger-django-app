@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.payPage .completeApplication {
+    margin-left: 160px;
+    margin-top: 130px;
+}
+
+.payPage .completeApplication .completeTitle {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 45px;
+    font-family: 'Mont-Regular';
+    color: #fff;
+}
+
+.payPage .completeApplication .firstCompleteText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 190.3%;
+    color: #fff;
+    font-family: 'Mont-Regular';
+}
+
+.payPage .completeApplication .secondCompleteText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 190.3%;
+    color: #fff;
+    font-family: 'Mont-Regular';
+    margin-top: -40px;
+}

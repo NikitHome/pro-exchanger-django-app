@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.payPage .trade {
+    display: inline-flex;
+}
+
+.payPage .trade .giveItAway {
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    width: 534px;
+    height: 416px;
+    margin-left: 160px;
+    margin-top: 40px;
+}
+
+.payPage .trade .giveItAway .giveText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.payPage .trade .giveItAway .giveInfo {
+    display: inline-flex;
+    margin-left: 60px;
+}
+
+.payPage .trade .giveItAway .giveInfo .giveCoinImg {
+    height: 61px;
+    width: 61px;
+}
+
+.payPage .trade .giveItAway .giveInfo .coinName1 {
+    width: 350px;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+}
+
+.payPage .trade .giveItAway .giveValue {
+    background: #00A097;
+    border-radius: 17px;
+    color: #fff;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    width: 274px;
+    height: 78px;
+    margin-top: 40px;
+    margin-left: 135px;
+}
+
+.payPage .trade .giveItAway .giveValue .giveNumAndMiniCoin {
+    margin-top: 14px;
+    height: 50px;
+    width: 240px;
+    margin-left: 20px;
+    background-color: #00A097;
+    border: none;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    color: #fff;
+    line-height: 58px;
+    text-align: center;
+}
+
+.payPage .trade .get {
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    width: 534px;
+    height: 416px;
+    margin-left: 48px;
+    margin-top: 40px;
+}
+
+.payPage .trade .get .getText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.payPage .trade .get .getInfo {
+    display: inline-flex;
+    margin-left: 60px;
+}
+
+.payPage .trade .get .getInfo .getCoinImg {
+    height: 61px;
+    width: 61px;
+}
+
+.payPage .trade .get .getInfo .coinName2 {
+    width: 350px;
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+}
+
+.payPage .trade .get div .walletText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.payPage .trade .get div .walletValue {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    font-family: 'Mont-Regular';
+    margin-left: 20px;
+}
+
+.payPage .trade .get div .walletValue .wallet {
+    width: 330px;
+    border: none;
+    background-color: #fff;
+}
+
+
+
+.payPage .status {
+    width: 1116px;
+    height: 193px;
+    background-color: #fff;
+    border-radius: 14px;
+    display: inline-flex;
+    margin-left: 160px;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+}
+
+.payPage .status .statusInfiniteVector {
+    margin-top: 75px;
+    margin-left: 60px;
+}
+
+.payPage .status .statusVLine {
+    width: 4px;
+    height: 135px;
+    margin-top: 58px;
+    margin-left: 70px;
+    margin-right: 40px;
+    background-color: #000;
+}
+
+.payPage .status .statusContent {
+    margin-left: 30px;
+    margin-top: -15px;
+}
+
+.payPage .status .statusContent .statusTitle {
+    color: #00A097;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    font-family: 'Mont-Regular';
+}
+
+.payPage .status .statusContent .statusText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    margin-top: -20px;
+}
+
+.payPage .status .statusVector {
+    margin-top: 55px;
+    margin-left: 260px;
+}

@@ -131,10 +131,59 @@
 
 
 
+.groupIntermediate {
+    display: inline-flex;
+}
+
+
+
+
+.intermediateBlock1ClickLeft {
+    display: none;
+    margin-top: 20px;
+    margin-left: 200px;
+    padding-right: 0;
+}
+
+.intermediateBlock1ClickLeft div {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intermediateBlock1ClickLeft div input {
+    width: 400px;
+    height: 35px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    font-family: 'Mont-Regular';
+    margin-right: 0;
+    background: none;
+    border: none;
+}
+
+.intermediateBlock1ClickLeft .minSumm {
+    margin-top: 40px;
+}
+
+.intermediateBlock1ClickLeft .maxSum {
+    margin-top: 10px;
+}
+
+.intermediateBlock1ClickLeft .rezerv {
+    margin-top: 10px;
+}
+
+
+
+
 .intermediateBlock1Click {
     display: none;
-    margin-left: 822px;
-    margin-top: 50px;
+    margin-left: 222px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+@font-face {
+    font-family: 'Mont-Regular';
+    src: url('../../fonts/Mont-Regular.ttf') format('truetype');
+}
+
+.payPage .support {
+    margin-left: 160px;
+    margin-top: 130px;
+    margin-bottom: 100px;
+    display: inline-flex;
+}
+
+.payPage .support img {
+    height: 90px;
+    width: 90px;
+    margin-top: 27px;
+}
+
+.payPage .support .supTextGroup {
+    margin-left: 20px;
+}
+
+.payPage .support .supTextGroup .questions {
+    font-style: normal;
+    font-family: 'Mont-Regular';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 190.3%;
+    color: #fff;
+}
+
+.payPage .support .supTextGroup .supText {
+    font-family: 'Mont-Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    text-decoration-line: underline;
+    color: #00FFF0;
+    margin-top: -30px;
+}

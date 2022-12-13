@@ -6,7 +6,7 @@ SECRET_KEY = '9mmw@mz4*_%7l_)yvd)j(fm!-!c8gbi#%0=t-6fs$pp77@9y$&'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'users',
